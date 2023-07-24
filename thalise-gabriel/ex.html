@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCumprimentoMensagem(){
+            let hora = 19
+            if (hora >= 0 && hora < 12){
+                return "Bom dia";
+            }    
+            else if (hora >= 12 && hora < 18){
+                return "Boa tarde";
+            }        
+            else{
+                return "Boa noite";
+            }
+         }
+     const cumprimentoMensagem = getCumprimentoMensagem();
+     console.log(cumprimentoMensagem);
+    </script>
+</body>
+</html>
