@@ -15,16 +15,16 @@
     <h1>Olá</h1>
     <script>
         // Faça um script que receba a hora e retorne no console a mensagem entre 00h e 12h "Bom dia!", entre 12h e 18h "Boa tarde!", e entre 18h e 00h "Boa noite//
-      var hora1 =22;
+      var hora = 23
     
-     if (hora1 <= 12 ) {
+     if (hora < 12) {
         console.log('Bom dia!')
         
-     } else if (12 < hora1 && hora1 <= 18)  {
+     } else if ( hora >= 12 && hora<=18 )  {
         console.log("Boa tarde!")
         
      }
-     else if(18 < hora1 && hora1 <= 0) {
+     else  {
         console.log('Boa noite!')
      }
     </script>
