@@ -11,9 +11,6 @@ Exercícios dia 24-07-2023
 
 4- Faça um script que verifique se uma letra armazenada numa variável é vogal ou consoante e retorne a resposta no console.
 
-![image](https://github.com/EdsonTiepermann/exercicio-js-turma-tarde-2023/assets/33090891/802fee87-849d-4297-8c4b-666ff4839526)
-
-
 5- Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado: A mensagem "Aprovado", se a média alcançada for maior ou igual a sete; A mensagem "Reprovado", se a média for menor do que sete; A mensagem "Aprovado com Distinção", se a média for igual a dez.
 
 6- Fazer um script que receba o valor do salário mínimo e o valor do salário de uma pessoa. Calcular e imprimir quantos salários mínimos ela ganha. Se a pessoa ganhar menos de 1 salário mínimo, retornar na tela "baixa renda". Se a pessoa ganhar entre 1 salário mínimo e 5 salários mínimos, retornar na tela "classe média". Se a pessoa ganhar mais de 5 salários mínimos, retornar na tela "classe alta". Base salário mínimo 1212. Salário da pessoa irá ser dada pela variável.
@@ -52,6 +49,8 @@ console.log(“texto” + variavel);
 4- Escreva um script que receba o peso em kg e uma altura em m e a partir desses valores calcule o índice de massa corpórea do utilizador.
 
 imc = peso / (altura * altura)
+
+![image](https://github.com/EdsonTiepermann/exercicio-js-turma-tarde-2023/assets/33090891/802fee87-849d-4297-8c4b-666ff4839526)
 
 E mostre na tela em qual grau o usuário se enquadra.
 
