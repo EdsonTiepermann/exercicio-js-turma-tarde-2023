@@ -103,6 +103,113 @@
                 console.log("O cargo possui salário de",base,"!");
             }
 */
-    </script>
+    // 4- Escreva um script que receba o peso em kg e uma altura em m e a partir desses valores calcule o índice de massa corpórea do utilizador.
+   
+        let kg = 50;
+        let m = 1.88;
+        
+        let imc;
+        let a;
+        
+        let map = "muito abaixo do peso";
+        let abp = "abaixo do peso";
+        let pn = "com o peso normal";
+        let acp = "acima do peso";
+        let ob1 = "com obesidade Grau I";
+        let ob2 = "com obesidade Grau II";
+        let ob3 = "com obesidade Grau III";
+
+        let err = ", espera, os valores náo deram certo";
+
+        if ((kg/(m*m) > 0) && (kg/(m*m) <= 17)) {
+            imc = 1;
+        }
+        else if(kg/(m*m) > 17 && kg/(m*m) <= 19) {
+            imc = 2;
+        }
+        else if(kg/(m*m) > 19 && kg/(m*m) <= 25) {
+            imc = 3;
+        }
+        else if(kg/(m*m) > 25 && kg/(m*m) <= 30) {
+            imc = 4;
+        }
+        else if(kg/(m*m) > 30 && kg/(m*m) <= 35) {
+            imc = 5;
+        }
+        else if(kg/(m*m) > 35 && kg/(m*m) <= 40) {
+            imc = 6;
+        }
+        else if (kg/(m*m) > 40) {
+            imc = 7;
+        }
+        else {
+            imc = 8;
+        }
+
+        switch(imc) {
+            case 1:
+                a = map;
+                break;
+            case 2:
+                a = abp;
+                break;
+            case 3:
+                a = pn;
+                break;
+            case 4:
+                a = acp;
+                break;
+            case 5:
+                a = ob1;
+                break;
+            case 6:
+                a = ob2;
+                break;
+            case 7:
+                a = ob3;
+                break;
+            case 8:
+                a = err;
+                break;
+        default:
+                a = err;
+                break;
+        }
+        console.log("Você está",a,"!");
+
+
+        /*
+
+        let a;s
+        let km;
+        let dist;
+
+        if (km < 20 && km > 10) {
+            dist = 1;
+        }
+        if (km < 30 && km > 20) {
+            dist = 2;
+        }
+
+        switch(dist) {
+            case 1:
+                a = "distancia entre 10 e 20 km";
+                break;
+            case 2:
+                a = "distancia entre 20 e 30 km";
+                break;
+            default:
+                a = "tente novamente";
+                break;
+        }
+
+        console.log("Você está",a,"!")
+
+
+*/
+
+
+
+   </script>
 </body>
 </html>
