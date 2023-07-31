@@ -50,6 +50,8 @@ console.log(“texto” + variavel);
 
 imc = peso / (altura * altura)
 
+![image](https://github.com/EdsonTiepermann/exercicio-js-turma-tarde-2023/assets/33090891/802fee87-849d-4297-8c4b-666ff4839526)
+
 E mostre na tela em qual grau o usuário se enquadra.
 
 console.log(“texto” + variavel);
