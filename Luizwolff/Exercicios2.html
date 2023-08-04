@@ -166,40 +166,42 @@
         se for pix, aplica-se um desconto de 10%; se for no débito, valor original; se for crédito em 1x, acréscimo de 5%; se for parcelado no cartão, acréscimo de 10% por
      parcela; se for parcelado no carnê, acréscimo de 20% por parcela;*/
      var vt= 100;
-     var valorcartão = 100; 
-     var pagamento = 'Parcelado no cartão';
-    if (valorcartão >= vt) {
-        document.write('O valor está dísponivel ' )
+     var valorcartão = 50; 
+     var pagamento = 'crédito';
+     console.log('Pagamento:', pagamento,'.')
+    
+     if (valorcartão >= vt) {
+        console.log(' O valor está dísponivel ' )
     }
     else if( valorcartão < vt){
-           document.write(' o valor é insuficiente ')
+         console.log(' O valor é insuficiente ')
 
     }
     else if(pagamento == vt && vt == pagamento){
-          document.write(' o pagamento escolhido é', pagamento)
+        console.log(' o pagamento escolhido é', pagamento)
 
     }
      else {
-        document.write('pagamento',pagamento)
         
     }
 
 
     switch (pagamento) {
         case 'pix':
-            document.write('A compra deu ', vt -(vt*0.1));
+            console.log('A compra deu ', vt -(vt*0.1));
             break;
         case 'débito':
-            document.write('A compra deu ', vt );
+            console.log('A compra deu ', vt );
             break;
          case 'crédito':
-            document.write('A compra deu ' , vt +(vt*0.05));
+            console.log('A compra deu ' , vt +(vt*0.05));
             break;
         case 'Parcelado no cartão':
-            document.write('A compra deu ', vt +(vt*0.1));
+            console.log('paecela feita')
+            console.log('A compra deu ', vt +(vt*0.1));
             break;
         case 'Parcelado no carnê':
-            document.write('A compra deu ', vt -(vt*0.2));
+            console.log('A compra deu ', vt -(vt*0.2));
             break;
      
         default:
