@@ -6,6 +6,7 @@
     <title>ex js</title>
   </head>
   <body>
+    <h1>Exercícios Switch</h1>
     <!-- --------------------------------------------------------------------------------------- -->
     <!-- 1- Obtenha uma entrada com o nome de um mês e mostre na tela a estação do ano relacionada ao mês. -->
     <!-- <script>
@@ -118,6 +119,73 @@
         case "base":
           console.log(income);
           break;
+      }
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 4- Escreva um script que receba o peso em kg e uma altura em m e a partir desses valores calcule
+     o índice de massa corpórea do utilizador. -->
+
+    <!-- <script>
+      var peso = 25;
+      var altura = 1.75;
+
+      imc = peso / (altura * altura);
+
+      console.log("IMC = " + imc);
+
+      if (imc < 18.5) {
+        console.log("Abaixo do peso");
+      } else if (imc >= 18.5 && imc <= 24.9) {
+        console.log("Peso normal");
+      } else if (imc >= 25 && imc <= 29.9) {
+        console.log("Sobrepeso");
+      } else {
+        console.log("Obesidade");
+      }
+    </script> -->
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 5- Compras, crie um script com a seguinte situação. Uma variável com valor total da compra. tipos de
+     pagamentos (pix, débito, crédito, parcelado no cartão, parcelado no carnê). se for pix, aplica-se um
+      desconto de 10%; se for no débito, valor original; se for crédito em 1x, acréscimo de 5%; se for parcelado
+       no cartão, acréscimo de 10% por parcela; se for parcelado no carnê, acréscimo de 20% por parcela; -->
+
+    <!-- <script>
+      var compra = 100;
+
+      var tipoasPagamento =
+        "pix, debito, credito, parceladocartao, parceladoboleto";
+
+      var pagamento = "ameixa";
+
+      switch (pagamento) {
+        case "pix":
+          totalPagamento = compra - (compra * 10) / 100;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "debito":
+          totalPagamento = compra;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "credito":
+          totalPagamento = compra + (compra * 5) / 100;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "parceladocartao":
+          totalPagamento = compra + (compra * 10) / 100;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "parceladoboleto":
+          totalPagamento = compra + (compra * 20) / 100;
+          console.log("O total da compra é:" + totalPagamento);
+          break;
+        default:
+          console.log(
+            `Tipo de pagamento digitado é inválido. Digite uma das opções a seguir: ` +
+              tipoasPagamento
+          );
       }
     </script> -->
   </body>
