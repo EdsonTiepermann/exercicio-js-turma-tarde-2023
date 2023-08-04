@@ -129,85 +129,133 @@
         /*  
    
        4- Escreva um script que receba o peso em kg e uma altura em m e a partir desses valores calcule o índice de massa corpórea do utilizador.*/
-       /* var kg = 120;
-        var a = 1.83;
-        var imc = kg / (a * a);
+        /* var kg = 120;
+         var a = 1.83;
+         var imc = kg / (a * a);
+        
+ 
+ 
+         if (imc >= 17 && imc <= 18) {
+             console.log('O imc do seu peso é', imc, ' E você está abaixo do peso')
+         }
+         else if (imc >= 18 && imc <= 24) {
+             console.log('O imc do seu peso é', imc,'  E você está com o peso normal')
+         }
+         else if (imc >= 25 && imc <= 29) {
+             console.log('O imc do seu peso é', imc, ' você está Acima do peso')
+         }
+         else if (imc >= 30 && imc <= 35) {
+             console.log('O imc do seu peso é', imc, ' você está com obesidade grau 1')
+         }
+         else if (imc >= 35 && imc <= 40) {
+             console.log('O imc do seu peso é', imc, ' você está com obesidade grau 2')
+         }  
+         else if (imc >= 40) {
+             console.log('O imc do seu peso é', imc, 'você está com obesidade grau 3')
+ 
+         }
+           else {
+             console.log('desnutrido', imc,)
+         }
+         */
+        /* 
+        
+        
+     5- Compras, crie um script com a seguinte situação. Uma variável com valor total da compra. 
+         tipos de pagamentos (pix, débito, crédito, parcelado no cartão, parcelado no carnê). 
+         se for pix, aplica-se um desconto de 10%; se for no débito, valor original; se for crédito em 1x, acréscimo de 5%; se for parcelado no cartão, acréscimo de 10% por
+      parcela; se for parcelado no carnê, acréscimo de 20% por parcela;*/
+        /*
+        
+        var vt= 100;
+        var valorcartão = 50; 
+        var pagamento = 'crédito';
+        console.log('Pagamento:', pagamento,'.')
        
+        if (valorcartão >= vt) {
+           console.log(' O valor está dísponivel ' )
+       }
+       else if( valorcartão < vt){
+            console.log(' O valor é insuficiente ')
+   
+       }
+       else if(pagamento == vt && vt == pagamento){
+           console.log(' o pagamento escolhido é', pagamento)
+   
+       }
+        else {
+           
+       }
+   
+   
+       switch (pagamento) {
+           case 'pix':
+               console.log('A compra deu ', vt -(vt*0.1));
+               break;
+           case 'débito':
+               console.log('A compra deu ', vt );
+               break;
+            case 'crédito':
+               console.log('A compra deu ' , vt +(vt*0.05));
+               break;
+           case 'Parcelado no cartão':
+               console.log('parcela feita')
+               console.log('A compra deu ', vt +(vt*0.1));
+               break;
+           case 'Parcelado no carnê':
+               console.log('A compra deu ', vt -(vt*0.2));
+               break;
+        
+           default:
+               break;
+        }*/
+        /*
+        Exercicios de laço de repetição
+           
+        01 - Escrever um algoritmo para mostrar os números ímpares entre 100 e 200 */
+        // let ni = 100;
+            /*for (let ni =100; ni <= 200; ni++) {
+            let verifica = ni % 2;
+
+           if (verifica != 0) {
+            console.log(ni);
+            
+           }
+        }*/
+        /* 
+       02 - Escrever um algoritmo que leia um valor para uma variável N 
+        de 1 a 10 e calcule a tabuada de N. Mostre a tabuada na 
+        forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N*/
 
 
-        if (imc >= 17 && imc <= 18) {
-            console.log('O imc do seu peso é', imc, ' E você está abaixo do peso')
-        }
-        else if (imc >= 18 && imc <= 24) {
-            console.log('O imc do seu peso é', imc,'  E você está com o peso normal')
-        }
-        else if (imc >= 25 && imc <= 29) {
-            console.log('O imc do seu peso é', imc, ' você está Acima do peso')
-        }
-        else if (imc >= 30 && imc <= 35) {
-            console.log('O imc do seu peso é', imc, ' você está com obesidade grau 1')
-        }
-        else if (imc >= 35 && imc <= 40) {
-            console.log('O imc do seu peso é', imc, ' você está com obesidade grau 2')
-        }  
-        else if (imc >= 40) {
-            console.log('O imc do seu peso é', imc, 'você está com obesidade grau 3')
+        /*let tabuada = 5;
+        for( let n = 0; n <=10; n++ ){
+        let result = n *tabuada
+        console.log(tabuada,' x ', n, ' = ', result)
 
-        }
-          else {
-            console.log('desnutrido', imc,)
         }
         */
-       /* 
-       
-       
-        5- Compras, crie um script com a seguinte situação. Uma variável com valor total da compra. 
-        tipos de pagamentos (pix, débito, crédito, parcelado no cartão, parcelado no carnê). 
-        se for pix, aplica-se um desconto de 10%; se for no débito, valor original; se for crédito em 1x, acréscimo de 5%; se for parcelado no cartão, acréscimo de 10% por
-     parcela; se for parcelado no carnê, acréscimo de 20% por parcela;*/
-     var vt= 100;
-     var valorcartão = 50; 
-     var pagamento = 'crédito';
-     console.log('Pagamento:', pagamento,'.')
+       /*
+        03 -Desenvolver um algoritmo que efetue a soma de todos os números ímpares que
+        são múltiplos de três e que se encontram no conjunto dos números de 1 até 500
+        */
+       /*let impar = 0;
+       for(let n =1; n <=500; n++){
+        let resutado= impar 
+       }
+       */
+
+
+
+
     
-     if (valorcartão >= vt) {
-        console.log(' O valor está dísponivel ' )
-    }
-    else if( valorcartão < vt){
-         console.log(' O valor é insuficiente ')
 
-    }
-    else if(pagamento == vt && vt == pagamento){
-        console.log(' o pagamento escolhido é', pagamento)
 
-    }
-     else {
         
-    }
 
 
-    switch (pagamento) {
-        case 'pix':
-            console.log('A compra deu ', vt -(vt*0.1));
-            break;
-        case 'débito':
-            console.log('A compra deu ', vt );
-            break;
-         case 'crédito':
-            console.log('A compra deu ' , vt +(vt*0.05));
-            break;
-        case 'Parcelado no cartão':
-            console.log('parcela feita')
-            console.log('A compra deu ', vt +(vt*0.1));
-            break;
-        case 'Parcelado no carnê':
-            console.log('A compra deu ', vt -(vt*0.2));
-            break;
-     
-        default:
-            break;
-     }
-        
+
+
 
 
 
