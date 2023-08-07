@@ -86,3 +86,22 @@ Exercícios dia 04-08-2023
 03 - Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de três e que se encontram no conjunto dos números de 1 até 500
 
 04 - Escrever um script que leia número de 0 a 999. Desses, fazer a soma apenas dos ímpares e mostrar na tela. Mostrar também o total de números ímpares e pares. E por fim, fazer a média aritmética da soma dos números divisíveis por 3
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Exercícios dia 07-08-2023
+
+01 - Crie um vetor (array) e um número.
+Mostre todos os índices onde esse número aparece no vetor, e não só apenas o primeiro e/ou  último índice em que o número aparece.
+
+02 - Faça um algoritmo que leia 6 valores positivos.
+Calcule a quantidade de números pares e ímpares, a média de valores pares e a média geral dos
+números lidos.
+
+03 - Crie um script que receba 3 números, coloque em um array, depois exiba tal array.
+Modifique os elementos do array de modo a sequência de números ficar do contrário.
+Ou seja, se digitou: 1,2,3
+Vai aparecer: 3,2,1
+
+04 - Escreva um script que leia 15 números positivos, encontre o maior deles e o menor deles, e mostre na tela. Faça isso na mão, não invoque nenhum método de sorting. Dica pesquisa sobre bubble sort.
+
