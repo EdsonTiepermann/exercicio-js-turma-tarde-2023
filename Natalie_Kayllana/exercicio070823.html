@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    <!-- <p> 01- Escrever um algoritimo que leia 10 números e conte quantos deles estão nos seguintes intervalos: [0-25],[26-50],[51-75] e [76-100]. Mostre na tela a quantidade de vezes que aparece cada intervalo.</p> -->
+    let array = [17, 16, 15, 65, 71, 89, 7, 8, 9, 77]
+
+    let count1 = 0;
+    let count2 = 0;
+    let count3 = 0;
+    let count4 = 0;
+
+    for (let index = 0; index < array,length; index++) {
+        if (array [index] <= 25) {
+            count1++;
+        }
+        else if (array[index] <= 50) {
+            count2++;
+        }
+        else if (array[index] <= 76) {
+            count3++;
+        }
+        else if (array[index] <= 100) {
+            count4++;
+        }
+}
+console.log()
+</script>
+</body>
+</html>
