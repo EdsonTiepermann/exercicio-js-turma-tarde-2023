@@ -105,3 +105,12 @@ Vai aparecer: 3,2,1
 
 04 - Escreva um script que leia 15 números positivos, encontre o maior deles e o menor deles, e mostre na tela. Faça isso na mão, não invoque nenhum método de sorting. Dica pesquisa sobre bubble sort.
 
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Exercícios dia 11-08-2023
+
+01 - Temos um vetor de 5 posições, com o nome de 5 itens que nosso herói carrega na mochila. Quando o personagem chega numa porta, queremos detectar automaticamente se ele tem ou não uma chave para deixá-lo passar. Verifique percorrendo o vetor, comparando se cada item tem o nome “chave” e retorne verdadeiro se encontrar alguma. Caso contrário, a função deve retornar falso. Dependendo do retorno deverá mostrar uma resposta na tela.
+
+02 - Uma eleição possui 2 candidatos a prefeito: o candidato José, do Partido da Felicidade e o candidato João, do Partido da Esperança. Os eleitores votam nos candidatos pelo número do partido. Para votar no candidato José do Partido da Felicidade, precisam digitar o número 1. Para votar no candidato João, do Partido da Esperança, precisam digitar o número 2. Faça um script que simule uma urna eletrônica. Temos 7 eleitores, cada eleitor poderá digitar um voto. Informe quantos votos cada candidato teve e qual deles ganhou a eleição.
+
+03 - Imagine o seguinte cenário: Marcelo lhe deve um dinheiro e promete pagar em parcelas mensais de R$ 70. Com o intuito de prever qual seria o valor devedor após o decorrer de 12 meses, você resolve escrever algumas linhas de código. Levando em consideração que o valor devido por Marcelo era de R$ 1400, qual seria o total devido após 12 meses?
