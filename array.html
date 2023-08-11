@@ -91,8 +91,75 @@
     <!-- 02 - Faça um algoritmo que leia 6 valores positivos. Calcule a quantidade de números pares e ímpares,
      a média de valores pares e a média geral dos números lidos. -->
 
-    <script>
+    <!-- <script>
       let positivos = [5, 10, 15, 20, 30, 35];
-    </script>
+
+      let resultado = 0;
+      let contPar = 0;
+      let contImpar = 0;
+      let mediaPar = 0;
+      let mediaGeral = 0;
+
+      for (let i = 0; i < positivos.length; i++) {
+        resultado = positivos[i] % 2;
+        if (resultado == 0) {
+          contPar++;
+          mediaPar += positivos[i];
+        } else {
+          contImpar++;
+        }
+        mediaGeral += positivos[i];
+      }
+
+      console.log("Quantidade números par: ", contPar);
+      console.log("Quantidade números impares: ", contImpar);
+      console.log("Média dos números pares: ", mediaPar / contPar);
+      console.log("Média geral: ", mediaGeral / positivos.length);
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- 03 - Crie um script que receba 3 números, coloque em um array, depois exiba tal array. Modifique
+     os elementos do array de modo a sequência de números ficar do contrário. Ou seja, se digitou: 1,2,3 Vai aparecer: 3,2,1 -->
+
+    <!-- <script>
+      let numeros = [7, 12, 19];
+      //             0   1   2
+      console.log(numeros);
+
+      for (let i = numeros.length - 1; i >= 0; i--) {
+        console.log(numeros[i]);
+      }
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- 04 - Escreva um script que leia 15 números positivos, encontre o maior deles e o menor deles, e
+     mostre na tela. Faça isso na mão, não invoque nenhum método de sorting. Dica pesquisa sobre bubble sort. -->
+
+    <!-- <script>
+      let bubble = [
+        7, 13, 16, 21, 32, 35, 47, 48, 63, 68, 91, 109, 17, 3, 5, 6,
+      ];
+      console.log(bubble.length);
+
+      function bubbleSort() {
+        for (let i = 0; i < bubble.length; i++) {
+          if (bubble[i] > bubble[i + 1]) {
+            let v1 = bubble[i];
+            let v2 = bubble[i + 1];
+            bubble[i] = v2;
+            bubble[i + 1] = v1;
+          }
+        }
+      }
+
+      for (let j = 0; j < bubble.length; j++) {
+        bubbleSort();
+      }
+
+      console.log(bubble);
+      console.log("Menor item do array: ", bubble[3]);
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
   </body>
 </html>
