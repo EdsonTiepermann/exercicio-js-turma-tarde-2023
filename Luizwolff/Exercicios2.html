@@ -252,45 +252,93 @@
       1- Crie um vetor (array) e um número. Mostre todos os índices onde esse número aparece no vetor, e não só apenas o 
       primeiro e/ou último índice em que o número aparece.*/
 
-      let index =[1, 10, 15, 20, 40, 50 , 60 ,73, 78, 100];
-
-      let cont1= 0;
-      let cont2= 0;
-      let cont3= 0;
-      let cont4= 0;
+     /*let num =[1, 10, 15, 20, 40, 51 , 60 ,73, 78, 100 ];
 
 
-
-
-
-
-
-
-
-       
-
-     for (let index = 0; index < array.length; index++) {
+      for (let index = 0; index < 10; index++) {
+        num.push(Math.floor(Math.random() *101));
         
-       if (array[index] <= 25) {
-            cont1++
+      }
+      let cont0_25 =0;
+      let cont26_50 =0;
+      let cont51_75 =0;
+      let cont76_100 =0;
+      num.forEach (function(numero){
+        if (numero<=25 &&  num <= 25 ){
+            cont0_25++
+        } else if (numero >= 26 && numero <=50){
+            cont26_50++
         }
-        else if(array[index] <= 50){
-            cont2++
+        else if (numero >= 51 && numero <=75){
+            cont51_75++
         }
-        else if(array[index] <= 76){
-            cont3++
+        else if (numero >= 76 && numero <=100){
+            cont76_100++;
         }
-        else if(array[index] <= 100){
-            cont4++
-        }
-    }
+            
+      })
 
             
     
-    console.log(cont1)
-    console.log(cont2);
-    console.log(cont3);
-    console.log(cont4)
+    console.log(cont0_25);
+    console.log(cont26_50);
+    console.log(cont51_75);
+    console.log(cont76_100)
+    
+    
+    /*
+    
+    2- Crie um vetor (array) e um número.
+    Mostre todos os índices onde esse número aparece no vetor, e não só apenas o primeiro e/ou último índice em que o número aparece.
+    
+   let vetor =[ 500]
+   console.log(let vetor =vetor.indexOf[500])
+
+    
+    3- Crie um script que receba 3 números, coloque em um array, depois exiba tal array.
+     Modifique os elementos do array de modo a sequência de números ficar do contrário. Ou seja, se digitou: 1,2,3 Vai aparecer: 3,2,1
+     */
+
+     /*
+     let num1 = 30;
+     let num2 = 40;
+     let num3 = 50;
+
+     let vetor = [30, 40, 50];
+     console.log(vetor[2])
+     console.log(vetor[1])
+     console.log(vetor[0])
+     */
+     /*
+     4- Escreva um script que leia 15 números positivos,
+      encontre o maior deles e o menor deles, e mostre na tela. Faça isso na mão, não invoque nenhum método de sorting.
+      Dica pesquisa sobre bubble sort.
+      */
+     let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+     let tmp =0;
+         for (let i = 0; i < num.length; i++) {
+            for (let j = 0; j < num.length -(i-1); j++) {
+                if (num[j] > num[j+1]) {
+                    tmp= num[j+1];
+                    num [j+1]=num[j];
+                    arr[j] = tmp;
+            }
+
+            console.log(num);
+        }   
+    }
+            
+     
+
+            
+    
+    
+
+
+
+
+   
+
        
 
         
