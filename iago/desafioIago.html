@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Mérito</title>
+  </head>
+  <body>
+    <h1>Meritocracia</h1>
+    <script>
+      //  Cada unidade tem uma receita base. Essa receita base será nosso comparativo para o caixa atual.
+      //   Cada unidade tem "x" pastas; Precisa bater 20 pastas. [array] Se bater 20 pastas, contabiliza
+      //   tanto pra positivo, quanto pra negativo o valor do caixa. Se não bater 20 pastas, valor positivo
+      //   não contabiliza, apenas valor negativo contabiliza. A diferença entre o valor total de caixa atual
+      //    com o valor total da base MAIS o valor do gerente, precisar ser maior que 20 mil.Se chegar a 20 mil
+      //     positivo, recebe 800 de meritocracia. A cada 20 mil, ganha 800 reais. Menos de 20 mil não recebe
+      //      meritocracia.Acima de 20 mil, caso não fechar outra merito(exemplo 40 mil), recebe proporcional.
+      //      Mostrar o valor entre a soma do valor total da base e o valor total atual do caixa. Mostrar o valor
+      //       total da meritocracia à receber (caso tenha batido). Mostrar o valor total do gerente, caso não tenha
+      //        batido a meritocracia.
+
+      let baseGerente = 0;
+      let minimoMerito = 20000;
+      let totalBaseAtual = 0;
+      let totalBaseAnterior = 0;
+      let saldoAtual = 0;
+
+      let baseUnidade = [
+        132091.35, 107262.59, 24422.35, 28889.29, 148347.45, 64635.84, 30421.26,
+        15000, 22585.53,
+      ];
+
+      let caixaAtual = [
+        139204.36, 99152.61, 27806.93, 35363.27, 173191.01, 61822.37, 28306.43,
+        46928.11, 18644.67,
+      ];
+
+      let pastasUnidades = [87, 24, 47, 20, 35, 15, 42, 29, 29];
+
+      let verificarMeta = 0;
+
+      for (let i = 0; i < pastasUnidades.length; i++) {
+        totalBaseAnterior = totalBaseAnterior + baseUnidade[i];
+
+        if (pastasUnidades[i] >= 20) {
+          totalBaseAtual = totalBaseAtual + caixaAtual[i];
+        }
+        if (pastasUnidades[i] < 20) {
+          if (caixaAtual[i] > baseUnidade[i]) {
+            totalBaseAtual = totalBaseAtual + baseUnidade[i];
+          }
+          if (caixaAtual[i] < baseUnidade[i]) {
+            totalBaseAtual = totalBaseAtual + caixaAtual[i];
+          }
+          if (totalBaseAtual[i] > totalBaseAnterior[i]) {
+            saldoAtual = saldoAtual + (caixaAtual[i] - baseUnidade[i]);
+          }
+        }
+      }
+
+      meritocracia = totalBaseAtual - totalBaseAnterior;
+      console.log("Saldo para cálculo de mérito = " + meritocracia);
+
+      if (meritocracia >= minimoMerito) {
+        verificarMeta = (meritocracia / minimoMerito) * 800;
+        console.log("Valor mérito gerente = " + verificarMeta);
+      } else {
+        console.log("não foi dessa vez");
+      }
+
+      console.log("Total base atual = " + totalBaseAtual);
+      console.log("Total base anterior = " + totalBaseAnterior);
+    </script>
+  </body>
+</html>
