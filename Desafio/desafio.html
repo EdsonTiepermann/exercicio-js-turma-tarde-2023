@@ -1,99 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-        body{
+    <style>
+        body {
             background: -moz-radial-gradient(red, black, red);
         }
-     </style>
+    </style>
 </head>
+
 <body>
     <script>
-    let baseGerente = 0;
-	let  minimoMerito = 20000;
+        let baseGerente = 0;
+        let minimoMerito = 20000;
 
-let baseUnidade = [
-    132091.35,
-    107262.59,
-    24422.35,
-    28889.29,
-    148347.45,
-    64635.84,
-    30421.26,
-    15000,
-    22585.53
-];
-let caixaAtual = [
-    139204.36,
-    99152.61,
-    27806.93,
-    35363.27,
-    173191.01,
-    61822.37,
-    28306.43,
-    46928.11,
-    18644.67
-];
-let pastasUnidades = [
-    87,
-    24,
-    47,
-    20,
-    35,
-    15,
-    42,
-    29,
-    29
-];
-let soma= 0;
-let soma2= 0;
-let soma3 = 0;
-for (let i = 0; i < baseUnidade.length; i++) {
-    // let result = baseUnidade[i+i] + caixaAtual[i++]
-   soma += baseUnidade[i];
-   soma2+= caixaAtual[i]; 
-   soma3+= baseGerente
-  if (pastasUnidades[i] == 20 ) {
-    console.log(i++, i--)
-}
-else if (pastasUnidades[i] <= 20){
-    console.log(i--)
-}
-let result= soma+ soma2 +soma3
-   if (result <= 20) {
-    console.log(result = 800)
-} 
-else if (result > 20){
-    console.log('sem meritocracia')
-}
-else {
-    
-   }
-console.log(result)
-}
+        let baseUnidade = [
+            132091.35,
+            107262.59,
+            24422.35,
+            28889.29,
+            148347.45,
+            64635.84,
+            30421.26,
+            15000,
+            22585.53
+        ];
+        let caixaAtual = [
+            139204.36,
+            99152.61,
+            27806.93,
+            35363.27,
+            173191.01,
+            61822.37,
+            28306.43,
+            46928.11,
+            18644.67
+        ];
+        let pastasUnidades = [
+            87,
+            24,
+            47,
+            20,
+            35,
+            15,
+            42,
+            29,
+            29
+        ];
+        // let soma = 0;
+        // let soma2 = 0;
+        // let soma3 = 0;
+        // for (let i = 0; i < baseUnidade.length; i++) {
+        //     // let result = baseUnidade[i+i] + caixaAtual[i++]
+        //     soma += baseUnidade[i];
+        //     soma2 += caixaAtual[i];
+        //     soma3 += baseGerente;
+        //     if (pastasUnidades[i] == 20000) {
+        //         console.log(i++, i--)
+        //     }
+        //     else if (pastasUnidades[i] <= 20000) {
+        //     }
+        //     let result = soma + soma2 + soma3
+        //     if (result <= baseGerente) {
+        //         console.log(result = 800)
+        //     }
+        //     else if (result > baseGerente) {
+        //         console.log('sem meritocracia')
+        //     }
+        //     else {
+
+        //     }
+
+        //     console.log(result)
+        // }
+       let result= 0;
+       let somabaseAtual= 0;
+       let somabaseAnterior= 0;
+       let merito= 0;
+       let valorMerito = 800;
+       let meritoganho = 0;
+
+       for (let i = 0; i < pastasUnidades.length; i++) {
+             somabaseAnterior += baseUnidade [i]
+
+             if (pastasUnidades[i] >= 20) {
+                somabaseAnterior += baseUnidade [i]
+            }
+            if (pastasUnidades[i] < 20)
+            if (caixaAtual[i] > baseUnidade[i]) {
+                somabaseAnterior += baseUnidade [i]
+            }
+            if (caixaAtual[i] < baseUnidade[i]) {
+                
+                somabaseAnterior += baseUnidade [i]
+
+                if (caixaAtual[i] > baseUnidade[i]) {
+                    somabaseAtual += baseUnidade [i]
+                }
+                if (caixaAtual[i] < baseUnidade[i]) {
+                    somabaseAtual += baseUnidade [i]
+                    
+                }
+            }
+        }
+
+        console.log('Base anterior', somabaseAnterior);
+        console.log('Base anterior', somabaseAtual) ;
 
 
+        merito = somabaseAtual - somabaseAnterior + baseGerente;
+        console.log('Merito', merito);
+        if (merito>= minimoMerito) {
+            meritoganho = (merito / minimoMerito) * valorMerito;
+            console.log('merito ganha', meritoganho);
+            
+        } else {
+            console.log('tente outra vez');
+            
+        }
 
-
-
-
-
-for (let i = 0; i < caixaAtual.length; i++) {
-}
-    if (baseunidade== caixaAtual) {
-        
-    } else {}
-     
-    
 
 
 
 
 
     </script>
-    
+
 </body>
+
 </html>
