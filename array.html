@@ -135,10 +135,8 @@
     <!-- 04 - Escreva um script que leia 15 números positivos, encontre o maior deles e o menor deles, e
      mostre na tela. Faça isso na mão, não invoque nenhum método de sorting. Dica pesquisa sobre bubble sort. -->
 
-    <script>
-      let bubble = [
-        7, 13, 16, 21, 32, 35, 47, 48, 63, 68, 91, 109, 17, 3, 5, 6,
-      ];
+    <!-- <script>
+      let bubble = [7, 13, 16, 21, 32, 35, 47, 48, 63, 68, 91, 17, 3, 5, 6];
 
       for (let i = 0; i < bubble.length; i++) {
         for (let j = i + 1; j < bubble.length; j++) {
@@ -150,7 +148,36 @@
         }
       }
 
-      console.log(bubble);
+      console.log("Arrray ordenado: " + bubble);
+      console.log("Length do array: " + bubble.length);
+      console.log("Menor número do array: " + bubble[0]);
+      console.log("Maior número do array: " + bubble[14]); // uma opção mostrar número maior
+      console.log("Maior número do array: " + bubble[bubble.length - 1]); // outra opção mostrar número maior
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 01 - Temos um vetor de 5 posições, com o nome de 5 itens que nosso herói carrega na mochila.
+     Quando o personagem chega numa porta, queremos detectar automaticamente se ele tem ou não uma
+      chave para deixá-lo passar. Verifique percorrendo o vetor, comparando se cada item tem o nome
+       “chave” e retorne verdadeiro se encontrar alguma. Caso contrário, a função deve retornar falso.
+        Dependendo do retorno deverá mostrar uma resposta na tela. -->
+
+    <script>
+      let itensHerois = ["caderno", "chave", "notbook", "caneta", "maçã"];
+      let msg = "";
+
+      for (let index = 0; index < itensHerois.length; index++) {
+        if (itensHerois[index] == "chave") {
+          msg = "Nosso herói abriu a porta com sucesso";
+          break;
+        }
+        if (itensHerois[index] != "chave") {
+          msg = "Nosso herói não tem a chave, não consegue abrir a porta";
+        }
+      }
+
+      console.log(msg);
     </script>
 
     <!-- --------------------------------------------------------------------------------------- -->
