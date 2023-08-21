@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio</title>
 </head>
 <body>
     <script>
@@ -46,16 +46,44 @@ let pastasUnidades = [
 console.log("base unidade", baseUnidade);
 
 let result = 0;
+let baseGerente = 0;
+let minimoMerito = 20000;
+let somaBaseAtual = 0;
+let somaBaseAnterior = 0;
+let merito = 0;
+let valorMerito = 800;
+let meritoGanho = 0;
 
 // console.log("caixa atual", caixaAtual);
 
-for (let i = 0; i < baseUnidade.lenght; i++) {
-    console.log("teste", baseUnidade[i]);
-    console.log("teste 2", caixaAtual[i]);
+for (let i = 0; i < pastasUnidades.lenght; i++) {
+    somaBaseAnterior = somaBaseAnterior + baseUnidade[i];
 
-    result = (baseUnidade[i] + caixaAtual[i]/ 2);
+    if (pastasUnidades[i] >= 20) {
+        somaBaseAtual = somaBaseAtual + caixaAtual[i];
+    }
+    if (pastasUnidades[i] < 20) {
+        if (caixaAtual[i] > baseUnidade[i]) {
+            somaBaseAtual = somaBaseAtual + baseUnidade[i]
+        }
 
-    console.log("base unidade", result)
+        if (caixaAtual[i] < baseUnidade[i]) {
+            somaBaseAtual = somaBaseAtual + caixaAtual[i]
+        }
+    }
+}    
+
+console.log("Base anterior", somaBaseAnterior);
+console.log("Base atual", somaBaseAtual);
+
+merito = somaBaseAtual - somaBaseAnterior + baseGerente;
+console.log("Merito", merito);
+
+if (merito >= minimoMerito) {
+    meritoGanho = (merito / minimoMerito) * valorMerito;
+    console.log("Merito ganha", meritoGanho);
+} else {
+    console.log('TENTE OUTRA VEZ');
 }
     </script>
     
