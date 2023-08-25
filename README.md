@@ -192,11 +192,11 @@ console.log(somarDoisNumeros(3, 5);
 03- Escreva uma função que, de acordo com a opção escolhida, mostrará as opções para o usuário. As opções serão:
 
         Gênero 	Classificação Indicativa
-        Ação 	        14
-        Romance 	10
-        Comédia 	8
+        Ação 14
+        Romance 10
+        Comédia 8
         Animação Livre
-        Suspense        16
-        Terror 	        18
+        Suspense 16
+        Terror 18
 
 Após ter sido escolhido a opção, terá que verificar a classificação indicativa do filme. Se o usuário tiver o mínimo de idade para a classificação do genêro do filme, retorne no console "Bom Filme"; Caso a idade do usuário não ter o mínimo da classificação do genêro do filme, retorne no console "Esse título não é para sua Idade", e mostre os Gêneros que a idade > do usuário pode assistir.
