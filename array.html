@@ -163,7 +163,7 @@
        “chave” e retorne verdadeiro se encontrar alguma. Caso contrário, a função deve retornar falso.
         Dependendo do retorno deverá mostrar uma resposta na tela. -->
 
-    <script>
+    <!-- <script>
       let itensHerois = ["caderno", "chave", "notbook", "caneta", "maçã"];
       let msg = "";
 
@@ -178,8 +178,31 @@
       }
 
       console.log(msg);
-    </script>
+    </script> -->
 
     <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 02 - Uma eleição possui 2 candidatos a prefeito: o candidato José, do Partido da Felicidade e o candidato
+     João, do Partido da Esperança. Os eleitores votam nos candidatos pelo número do partido. Para votar no
+      candidato José do Partido da Felicidade, precisam digitar o número 1. Para votar no candidato João,
+       do Partido da Esperança, precisam digitar o número 2. Faça um script que simule uma urna eletrônica.
+        Temos 7 eleitores, cada eleitor poderá digitar um voto. Informe quantos votos cada candidato teve
+         e qual deles ganhou a eleição. -->
+
+    <script>
+      let jose = 0;
+      let joao = 0;
+      let votacao = [1, 2, 1, 2, 2, 1, 1];
+
+      for (let i = 0; i < votacao.length; i++) {
+        if (votacao[i] == 1) {
+          jose++;
+        } else {
+          joao++;
+        }
+      }
+      console.log(jose);
+      console.log(joao);
+    </script>
   </body>
 </html>
