@@ -177,6 +177,8 @@ Mostrar o valor total do gerente, caso não tenha batido a meritocracia.
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Exercícios dia 25-08-2023
+
+
 01- Escreva uma função que realize uma soma e mostre o resultado no console.log.
 //resolução mais simples e chamada da função do exercício 1.
 function somarDoisNumeros(num1, num2){
