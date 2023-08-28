@@ -9,6 +9,7 @@
 
 <body>
     <script>
+        /*
         let baseGerente = 0;
         let minimoMerito = 20000;
         let baseUnidade = [
@@ -56,8 +57,22 @@
             
 
         }
+        */
+        let array = [14, 16, 6, 10, 9, 2, 80, 85]
+         console.log("antes",array);
 
-
+         for(let i = 0; i < array.length; i++){
+            for(let j = 0; j < array.length; j++){
+                if(array[j]) > array[j + 1]){
+                    var temp = array[i];
+                    array[j] = array [j + 1];
+                    array[j + 1] = temp; 
+                }
+            }
+         }
+         console.log("depois", array);
+         console.log("primeira posicao", array[0]);
+          console.log("ultima posicao", array[array.length - 1]);
     </script>
 </body>
 
