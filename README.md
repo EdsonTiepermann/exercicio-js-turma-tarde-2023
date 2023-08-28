@@ -20,12 +20,3 @@ Exercícios dia 24-07-2023
 8- Faça um script que uma variável receba um número (de 1 a 12) e retorne o mês correspondente como uma string no console. Por exemplo, se a entrada for 2, deverá retornar “fevereiro”, pois este é o 2° mês.
 
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________
-Exercícios dia 04-08-2023
-
-01 - Escrever um algoritmo para mostrar os números ímpares entre 100 e 200
-
-02 - Escrever um algoritmo que leia um valor para uma variável N de 1 a 10 e calcule a tabuada de N. Mostre a tabuada na forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N
-
-03 - Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de três e que se encontram no conjunto dos números de 1 até 500
-
-04 - Escrever um script que leia número de 0 a 999. Desses, fazer a soma apenas dos ímpares e mostrar na tela. Mostrar também o total de números ímpares e pares. E por fim, fazer a média aritmética da soma dos números divisíveis por 3

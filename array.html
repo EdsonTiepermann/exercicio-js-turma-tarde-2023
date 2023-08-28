@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1>Arrays</h1>
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- Escrever um algoritimo que leia 10 números e conte quantos deles estão nos seguintes intervalos:
+    [0-25], [26-50], [51-75] e [76-100]. Mostre na tela a quantidade de vezes que aparece cada intervalo. -->
+
+    <!-- <script>
+      let array = [5, 10, 20, 35, 51, 68, 72, 88, 93, 100];
+
+      let array1 = 0;
+      let array2 = 0;
+      let array3 = 0;
+      let array4 = 0;
+
+      console.log(array);
+
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] >= 0 && array[i] <= 25) {
+          array1++;
+        } else if (array[i] >= 26 && array[i] <= 50) {
+          array2++;
+        } else if (array[i] >= 51 && array[i] <= 75) {
+          array3++;
+        } else if (array[i] >= 76 && array[i] <= 100) {
+          array4++;
+        }
+      }
+      console.log(array1);
+      console.log(array2);
+      console.log(array3);
+      console.log(array4);
+    </script> -->
+
+    <!-- <script>
+      let array = [5, 10, 20, 35, 51, 68, 72, 88, 93, 100];
+
+      let array1 = 0;
+      let array2 = 0;
+      let array3 = 0;
+      let array4 = 0;
+
+      console.log(array);
+
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] <= 25) { 
+          array1++;
+        } else if (array[i] <= 50) {
+          array2++;
+        } else if (array[i] <= 75) {
+          array3++;
+        } else if (array[i] <= 100) {
+          array4++;
+        }
+      }
+      console.log(array1);
+      console.log(array2);
+      console.log(array3);
+      console.log(array4);
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- Crie um vetor (array) e um número. Mostre todos os indices onde esse número aparece no vetor e 
+    não só apenas o primeiro e/ou último índice em que o número aparece. -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 01 - Crie um vetor (array) e um número. Mostre todos os índices onde esse número aparece no vetor,
+    e não só apenas o primeiro e/ou último índice em que o número aparece. -->
+
+    <!-- <script>
+      let arrayNumeros = [1, 5, 10, 200, 5, 7, 18, 5, 32, 70, 5];
+      let numero = 70;
+
+      for (let i = 0; i < arrayNumeros.length; i++) {
+        if (arrayNumeros[i] == numero) {
+          console.log(i);
+        }
+      }
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 02 - Faça um algoritmo que leia 6 valores positivos. Calcule a quantidade de números pares e ímpares,
+     a média de valores pares e a média geral dos números lidos. -->
+
+    <!-- <script>
+      let positivos = [5, 10, 15, 20, 30, 35];
+
+      let resultado = 0;
+      let contPar = 0;
+      let contImpar = 0;
+      let mediaPar = 0;
+      let mediaGeral = 0;
+
+      for (let i = 0; i < positivos.length; i++) {
+        resultado = positivos[i] % 2;
+        if (resultado == 0) {
+          contPar++;
+          mediaPar += positivos[i];
+        } else {
+          contImpar++;
+        }
+        mediaGeral += positivos[i];
+      }
+
+      console.log("Quantidade números par: ", contPar);
+      console.log("Quantidade números impares: ", contImpar);
+      console.log("Média dos números pares: ", mediaPar / contPar);
+      console.log("Média geral: ", mediaGeral / positivos.length);
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- 03 - Crie um script que receba 3 números, coloque em um array, depois exiba tal array. Modifique
+     os elementos do array de modo a sequência de números ficar do contrário. Ou seja, se digitou: 1,2,3 Vai aparecer: 3,2,1 -->
+
+    <!-- <script>
+      let numeros = [7, 12, 19];
+      //             0   1   2
+      console.log(numeros);
+
+      for (let i = numeros.length - 1; i >= 0; i--) {
+        console.log(numeros[i]);
+      }
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- 04 - Escreva um script que leia 15 números positivos, encontre o maior deles e o menor deles, e
+     mostre na tela. Faça isso na mão, não invoque nenhum método de sorting. Dica pesquisa sobre bubble sort. -->
+
+    <!-- <script>
+      let bubble = [7, 13, 16, 21, 32, 35, 47, 48, 63, 68, 91, 17, 3, 5, 6];
+
+      for (let i = 0; i < bubble.length; i++) {
+        for (let j = i + 1; j < bubble.length; j++) {
+          if (bubble[i] > bubble[j]) {
+            let aux = bubble[i];
+            bubble[i] = bubble[j];
+            bubble[j] = aux;
+          }
+        }
+      }
+
+      console.log("Arrray ordenado: " + bubble);
+      console.log("Length do array: " + bubble.length);
+      console.log("Menor número do array: " + bubble[0]);
+      console.log("Maior número do array: " + bubble[14]); // uma opção mostrar número maior
+      console.log("Maior número do array: " + bubble[bubble.length - 1]); // outra opção mostrar número maior
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 01 - Temos um vetor de 5 posições, com o nome de 5 itens que nosso herói carrega na mochila.
+     Quando o personagem chega numa porta, queremos detectar automaticamente se ele tem ou não uma
+      chave para deixá-lo passar. Verifique percorrendo o vetor, comparando se cada item tem o nome
+       “chave” e retorne verdadeiro se encontrar alguma. Caso contrário, a função deve retornar falso.
+        Dependendo do retorno deverá mostrar uma resposta na tela. -->
+
+    <!-- <script>
+      let itensHerois = ["caderno", "chave", "notbook", "caneta", "maçã"];
+      let msg = "";
+
+      for (let index = 0; index < itensHerois.length; index++) {
+        if (itensHerois[index] == "chave") {
+          msg = "Nosso herói abriu a porta com sucesso";
+          break;
+        }
+        if (itensHerois[index] != "chave") {
+          msg = "Nosso herói não tem a chave, não consegue abrir a porta";
+        }
+      }
+
+      console.log(msg);
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 02 - Uma eleição possui 2 candidatos a prefeito: o candidato José, do Partido da Felicidade e o candidato
+     João, do Partido da Esperança. Os eleitores votam nos candidatos pelo número do partido. Para votar no
+      candidato José do Partido da Felicidade, precisam digitar o número 1. Para votar no candidato João,
+       do Partido da Esperança, precisam digitar o número 2. Faça um script que simule uma urna eletrônica.
+        Temos 7 eleitores, cada eleitor poderá digitar um voto. Informe quantos votos cada candidato teve
+         e qual deles ganhou a eleição. -->
+
+    <script>
+      let jose = 0;
+      let joao = 0;
+      let votacao = [1, 2, 1, 2, 2, 1, 1];
+
+      for (let i = 0; i < votacao.length; i++) {
+        if (votacao[i] == 1) {
+          jose++;
+        } else {
+          joao++;
+        }
+      }
+      console.log(jose);
+      console.log(joao);
+    </script>
+  </body>
+</html>

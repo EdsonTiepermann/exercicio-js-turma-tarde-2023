@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var carro = {
+
+            tipo: "Fiat",
+            modelo: "Uno",
+            cor: "vermelho",
+
+            ligando: false,
+
+            ligar: function() {
+                console.log("Carro ligado");
+                this.ligando = true
+            },
+
+            desligar: function() {
+                console.log("Carro desligado");
+                this.ligando = false
+            },
+
+            acelerar: function() {
+                if (this.ligando == true) {
+                    console.log("Vrum Vrum");
+                } else {
+                    console.log("Carro desligado, vc precisa liga-lo");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
