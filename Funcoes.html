@@ -24,7 +24,7 @@
       console.log(chamadafunction);
     </script> -->
 
-    <script>
+    <!-- <script>
       var num1 = 5;
       var num2 = 5;
       var calc = "-";
@@ -55,6 +55,41 @@
         }
       }
       console.log(calcular(num1, num2));
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 03 - Escreva uma função que, de acordo com a opção escolhida, mostrará as opções para o usuário.
+     As opções serão:
+
+    Gênero 	Classificação Indicativa
+    Ação 14
+    Romance 10
+    Comédia 8
+    Animação Livre
+    Suspense 16
+    Terror 18 -->
+
+    <script>
+      let age = 5;
+      let indication = "Ação";
+
+      function verify(indication, age) {
+        switch (indication) {
+          case "Ação":
+            if (age >= 14) {
+              console.log("Bom filme");
+            } else {
+              console.log("Esse título não é para sua idade");
+            }
+            break;
+
+          default:
+            break;
+        }
+      }
+
+      console.log(verify(indication, age));
     </script>
   </body>
 </html>
