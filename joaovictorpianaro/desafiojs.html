@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     let baseGerente = 0;
+let minimoMerito = 20000;
+
+let baseUnidade = [
+  132091.35,
+  107262.59,
+  24422.35,
+  28889.29,
+  148347.45,
+  64635.84,
+  30421.26,
+  15000,
+  22585.53
+];
+let caixaAtual = [
+  139204.36,
+  99152.61,
+  27806.93,
+  35363.27,
+  173191.01,
+  61822.37,
+  28306.43,
+  46928.11,
+  18644.67
+];
+let pastasUnidades = [
+  87,
+  24,
+  47,
+  20,
+  35,
+  15,
+  42,
+  29,
+  29
+];
+
+let valorBase = 0;
+let valorAtual = 0;
+let diferenca = 0;
+let pastasTotal = 0;
+
+for (let i = 0; i < baseUnidade.length; i++) {
+  valorBase += baseUnidade[i];
+  valorAtual += caixaAtual[i];
+  pastasTotal += pastasUnidades[i];
+}
+
+diferenca = valorAtual - valorBase - baseGerente;
+
+let positivo = 0;
+let negativo = 0;
+
+if (pastasTotal >= 20) {
+  positivo = diferenca;
+} else {
+  negativo = diferenca;
+}
+
+let meritocracia = 0;
+let gerente = 0;
+
+if (positivo >= minimoMerito) {
+  meritocracia = (positivo / minimoMerito) * 800;
+} else {
+  gerente = diferenca;
+}
+
+console.log("Diferença entre valor base e valor atual do caixa: " + diferenca);
+console.log("Valor total da meritocracia a receber: " + meritocracia);
+console.log("Valor total do gerente: " + gerente);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

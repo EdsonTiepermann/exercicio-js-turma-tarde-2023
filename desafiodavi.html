@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+ /*
+        baseGerente = 0;
+	    minimoMerito = 20000;
+
+let baseUnidade = [
+    132091.35,
+    107262.59,
+    24422.35,
+    28889.29,
+    148347.45,
+    64635.84,
+    30421.26,
+    15000,
+    22585.53
+];
+let caixaAtual = [
+    139204.36,
+    99152.61,
+    27806.93,
+    35363.27,
+    173191.01,
+    61822.37,
+    28306.43,
+    46928.11,
+    18644.67
+];
+let pastasUnidades = [
+    87,
+    24,
+    47,
+    20,
+    35,
+    15,
+    42,
+    29,
+    29
+];
+
+let result = 0;
+
+        for (let i = 0; i < baseUnidade.lenght; i++){
+            console.log("teste", baseUnidade[i]);
+            console.log("teste 2", caixaAtual[i]);
+
+            result = (baseUnidade[i] + caixaAtual[i] /2);
+
+            console.log("base unidade", result);
+        }
+*/
+
+/*
+let baseGerente = 0;
+let minimoMerito = 20000;
+let valorMeritoPor20Mil = 800;
+
+let baseUnidade = [
+    132091.35,
+    107262.59,
+    24422.35,
+    28889.29,
+    148347.45,
+    64635.84,
+    30421.26,
+    15000,
+    22585.53
+];
+let caixaAtual = [
+    139204.36,
+    99152.61,
+    27806.93,
+    35363.27,
+    173191.01,
+    61822.37,
+    28306.43,
+    46928.11,
+    18644.67
+];
+let pastasUnidades = [
+    87,
+    24,
+    47,
+    20,
+    35,
+    15,
+    42,
+    29,
+    29
+];
+
+let totalBase = 0;
+for (let i = 0; i < baseUnidade.length; i++) {
+    totalBase += baseUnidade[i];
+}
+
+let totalCaixa = 0;
+for (let i = 0; i < caixaAtual.length; i++) {
+    totalCaixa += caixaAtual[i];
+}
+
+let diferenca = totalCaixa - totalBase + baseGerente;
+let meritocracia = (diferenca / minimoMerito) * valorMeritoPor20Mil;
+
+if (meritocracia < valorMeritoPor20Mil) {
+    meritocracia = 0;
+}
+
+let gerente = 0;
+if (diferenca < 0) {
+    gerente = diferenca;
+}
+
+console.log("Diferença entre base e caixa atual:", diferenca);
+console.log("Meritocracia a receber:", meritocracia);
+console.log("Valor do gerente:", gerente);
+*/
+
+
+
+let baseGerente = 0;
+let minimoMerito = 20000;
+let result = 0;
+let somaBaseAtual = 0;
+let somaBaseAnterior = 0;
+let merito = 0;
+let valorMerito = 800;
+let meritoGanho = 0;
+
+let baseUnidade = [
+    132091.35,
+    107262.59,
+    24422.35,
+    28889.29,
+    148347.45,
+    64635.84,
+    30421.26,
+    15000,
+    22585.53
+];
+let caixaAtual = [
+    139204.36,
+    99152.61,
+    27806.93,
+    35363.27,
+    173191.01,
+    61822.37,
+    28306.43,
+    46928.11,
+    18644.67
+];
+let pastasUnidades = [
+    87,
+    24,
+    47,
+    20,
+    35,
+    15,
+    42,
+    29,
+    29
+];
+
+    for (let index = 0; index < pastasUnidades.lenght; index++) {
+        somaBaseAnterior = somaBaseAnterior + baseUnidade[index];
+
+        if (pastasUnidades[index] >= 20) {
+            somaBaseAtual = somaBaseAtual + caixaAtual[index];
+        }
+        if (caixaAtual[index] < baseUnidade[index]) {
+            if (caixaAtual[index] > baseUnidade[index]) {
+                somaBaseAtual = somaBaseAtual + baseUnidade[index]
+            }
+
+            if (caixaAtual[index] < baseUnidade[index]) {
+                somaBaseAtual = somaBaseAtual + caixaAtual[index]
+            }
+        }
+    }
+
+    console.log("Base anterior", somaBaseAnterior);
+    console.log("Bse atual", somaBaseAtual);
+
+    merito = somaBaseAtual - somaBaseAnterior + baseGerente;
+    console.log("Merito", merito);
+    
+    if (merito >= minimoMerito) {
+        meritoGanho = (merito / minimoMerito) * valorMerito;
+        console.log("Merito ganha", meritoGanho);
+    } else {
+        console.log("TENTE OUTRA VEZ!");
+    }
+
+    </script>
+</body>
+</html>

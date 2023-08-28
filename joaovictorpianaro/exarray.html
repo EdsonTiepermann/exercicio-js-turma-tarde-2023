@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let contador1 = 0
+        let contador2 = 0
+        let contador3 = 0
+        let contador4 = 0
+        let i = 0
+        let numeros = [12,54,76,89,45,76,,23,6,84,56];
+
+        for (let i = 0 ; i < numeros.length; i+=1) {
+        let numero = numeros[i];
+
+        if (numero <= 25) {
+            contador1++;
+        }
+        else if (numero >= 26 && numero <= 50 ) {
+            contador2++;
+        }
+        else if (numero >= 51 && numero<= 75) {
+            contador3++;
+        }
+        else if (numero >= 76 && numero >= 100) {
+            contador4++;
+        } }
+        console.log('as quantidades de vezes que os numeros aparecem em cada intervalo são 0-25 = ' + contador1 + ', 26-50 = ' + contador2 + ', 51-75 = ' + contador3 + ', 76-100 = ' + contador4)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

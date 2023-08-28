@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        let baseGerente = 0;
+        let minimoMerito = 20000;
+        let baseUnidade = [
+            132091.35,
+            107262.59,
+            24422.35,
+            28889.29,
+            148347.45,
+            64635.84,
+            30421.26,
+            15000,
+            22585.53
+        ];
+        let caixaAtual = [
+            139204.36,
+            99152.61,
+            27806.93,
+            35363.27,
+            173191.01,
+            61822.37,
+            28306.43,
+            46928.11,
+            18644.67
+        ];
+        let pastasUnidades = [
+            87,
+            24,
+            47,
+            20,
+            35,
+            15,
+            42,
+            29,
+            29
+        ];
+        let result = 0;
+            for (let i = 0; i < pastasUnidades.length; i++) {
+            resultado = (caixaAtual[i] - baseUnidade[i]);
+            if (resultado >= 20000) {
+                console.log("maior q 20k", i, resultado);
+            }
+            else {
+                console.log("menor q 20k", i, resultado);
+            }
+            
+
+        }
+        */
+        let array = [14, 16, 6, 10, 9, 2, 80, 85]
+         console.log("antes",array);
+
+         for(let i = 0; i < array.length; i++){
+            for(let j = 0; j < array.length; j++){
+                if(array[j]) > array[j + 1]){
+                    var temp = array[i];
+                    array[j] = array [j + 1];
+                    array[j + 1] = temp; 
+                }
+            }
+         }
+         console.log("depois", array);
+         console.log("primeira posicao", array[0]);
+          console.log("ultima posicao", array[array.length - 1]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*
+      function somaDoisNumeros(n1, n2) {
+            let result;
+            result = n1+n2;
+            return result;
+        }
+    
+    let n1 = 6;
+    let n2 = 4;
+    console.log("agora vai samerds", somaDoisNumeros(n1, n2));*/
+
+        function calcula(n1, n2, operacao) {
+            let soma;
+            let sub;
+            let mult;
+            let div;
+            let result;
+
+            soma = n1+n2;
+            sub = n1-n2;
+            mult = n1*n2;
+            div = n1/n2;
+
+            switch (operacao) {
+                case 'soma':
+                    result = soma;
+                    break;
+                    
+                case 'sub':
+                    result = sub;
+                    break;  
+                
+                case 'mult':
+                    result = mult;
+                    break;
+                
+                case 'div':
+                    result = div;
+                    break;
+
+                default:
+                    result = "deu bizu";
+                    break;          
+            }
+
+            return result;
+        }
+
+        //let result = 0;
+        let n1 = 6;
+        let n2 = 4;
+        let result = calcula(n1, n2, 'mult');
+        console.log("vai fera", result);
+
+    </script>
+</body>
+</html>
