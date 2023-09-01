@@ -215,3 +215,25 @@ Exercícios dia 29-08-2023
 01- Crie um formulário em html com o que você aprendeu na aula de HTML, porém utilize o framework Bootstrap para criação do layout, envie as informações para o mesmo arquivo de criação do layout e utilize o method get. Lembrando que o button deve ser do tipo submit.
 
 02- Crie um layout com alguns componentes do bootstrap a sua e
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Exercícios dia 01-09-2023
+
+1 - Em uma página HTML, utilizando input, insira uma idade e verifique de forma dinâmica se é menor ou  maior de idade, se a idade for maior ou igual a 18 anos, deixe o background da tela com a cor black e com o texto informando que a idade é maior de idade com a cor silver, se for menor de idade, deixar o background vermelho com as fonts na cor white.
+
+02- Utilizando eventos DOM e uma página HTML, escreva uma função calculadora que na sua chamada receba uma das operações básicas e dois valores para o cálculo, apresente na tela a operação escolhida e o resultado.
+
+03- Escreva uma função que, de acordo com a opção escolhida, mostrará as opções para o usuário. As opções serão:
+
+        Gênero 	Classificação Indicativa
+        Ação 		14
+        Romance 	10
+        Comédia 	 8
+        Animação 	Livre
+        Suspense 	16
+        Terror 	18
+
+Após ter sido escolhido a opção, terá que verificar a classificação indicativa do filme. Se o usuário tiver o mínimo de idade para a classificação do gênero do filme, retorne na tela "Bom Filme"; Caso a idade do usuário não ter o mínimo da classificação do gênero do filme, retorne na tela "Esse título não é para sua Idade", e mostre os Gêneros que a idade > do usuário pode assistir.
+
+
