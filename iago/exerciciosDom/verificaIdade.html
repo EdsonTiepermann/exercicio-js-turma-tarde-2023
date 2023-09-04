@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verifica Idade</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="row mt-4">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <input
+          id="idade"
+          type="number"
+          class="form-control"
+          placeholder="number"
+        />
+      </div>
+      <div class="col-md-4">
+        <button
+          type="submit"
+          class="btn btn-primary col-md-12"
+          onclick="verificaIdade()"
+        >
+          Enviar
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function verificaIdade() {
+      let idade = document.getElementById("idade").value;
+      if (idade < 18) {
+        document.body.style.backgroundColor = "blue";
+        document.body.style.color = "black";
+      } else {
+        document.body.style.backgroundColor = "yellow";
+        document.body.style.color = "red";
+      }
+    }
+  </script>
+</html>
