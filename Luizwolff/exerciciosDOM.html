@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="numero1" id="nu1">
+    <input type="number" placeholder="numero2" id=" nu2">
+    <h1 id="res"> resultado</h1>
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+        function calcular() {
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let resultado = Number(n1) + Number(n2);
+            document.getElementById('res').innerHTML = 'O resultado é '+ resultado
+        }
+            
+    </script>
+   
+   
+</body>
+</html>

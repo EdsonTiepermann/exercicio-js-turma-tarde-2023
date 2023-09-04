@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="number" id="n1" placeholder="numero1">
+    <input type="number" id="n2" placeholder="numero2">
+    <h1 id="res">vai aparecer o resultado</h1>
+      <button onclick="somar()">Somar</button>
+      <script>
+        function somar() {
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let resultado = Number(n1) + Number(n2);
+            document.getElementById('res').innerHTML = 'O resultado é '+ resultado
+        }
+            
+      </script>
+    
+</body>
+</html>

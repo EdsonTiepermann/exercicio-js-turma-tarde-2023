@@ -61,9 +61,29 @@
        /*
        03-
        */
-      function filme (gênero14) {
+      function filme(genero,usuario) {
+        let result
+        switch (genero) {
+            case 'Ação':
+                if (usuario >= 14) {
+                    return 'Bom filme'
+                    
+                }
+                else if (usuario < 14 )
+                return "Esse titulo não é para sua idade"
+            
+                break;
+        
+                
+            default:
+                break;
+        }
+
         
       }
+      let genero='Ação'
+      let usuario =14
+      console.log(filme(genero, usuario))
 
 
     </script>
