@@ -240,3 +240,39 @@ Após ter sido escolhido a opção, terá que verificar a classificação indica
  04 - Faça um programa com layout (bootstrap ou html e css) aonde o usuário informa 3 notas de um aluno. Em seguida calcule a média do aluno e dar o seguinte resultado: A mensagem "Aprovado" com o fundo na cor amarela e a fonte na cor preta, se a média alcançada for maior ou igual a sete; A mensagem "Reprovado" com o fundo vermelho e a fonte branca, se a média for menor do que sete; A mensagem "Aprovado com Distinção" com o fundo verde e a fonte branca, se a média for igual a dez.
 
 05 - Faça um script que verifique se um número inteiro é divisível por 3. Mostrar no console a mensagem se é divisível ou não.
+
+<body>
+    <!-- Faça um script com layout que verifique se um número inteiro 
+        é divisível por 3.
+ Mostrar no console a mensagem se é divisível ou não se for deixar o fundo 
+ da div na cor verde e texto na cor branca, senão fundo na cor vermelha
+ e texto na cor branca. -->
+
+    <div class="input-group mb-3">
+        <!-- <span class="input-group-text" id="basic-addon1">Inseir um número</span> -->
+        <input type="text" id="numero" class="form-control" placeholder="Digitar um número">
+    </div>
+
+    <button type="button" id="btn-verificar" onclick="verificarDivisivel()" class="btn btn-primary">Verificar</button>
+
+</body>
+<script>
+    function verificarDivisivel() {
+        // alert("oi");
+        let num = parseInt(document.getElementById("numero").value);
+        let result = 0;
+        result = num % 3;
+        // console.log(num);
+
+        let btn = document.getElementById("btn-verificar");
+
+        if (num % 3 == 0) {
+            // if (result == 0) {
+            btn.classList.replace("btn-primary", "btn-success");
+            btn.innerHTML = "É divisível por 3";
+        } else {
+            btn.classList.replace("btn-primary", "btn-danger");
+            btn.innerHTML = "Não eh divisível por 3";
+        }
+    }
+</script>
