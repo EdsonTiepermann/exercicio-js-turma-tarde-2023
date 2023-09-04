@@ -241,7 +241,7 @@ Após ter sido escolhido a opção, terá que verificar a classificação indica
 
 05 - Faça um script que verifique se um número inteiro é divisível por 3. Mostrar no console a mensagem se é divisível ou não.
 
-<body>
+	<body>
     <!-- Faça um script com layout que verifique se um número inteiro 
         é divisível por 3.
  Mostrar no console a mensagem se é divisível ou não se for deixar o fundo 
@@ -255,11 +255,12 @@ Após ter sido escolhido a opção, terá que verificar a classificação indica
 
     <button type="button" id="btn-verificar" onclick="verificarDivisivel()" class="btn btn-primary">Verificar</button>
 
-</body>
-<script>
+	</body>
+
+	<script>
     function verificarDivisivel() {
         // alert("oi");
-        let num = parseInt(document.getElementById("numero").value);
+       let num = parseInt(document.getElementById("numero").value);
         let result = 0;
         result = num % 3;
         // console.log(num);
@@ -275,4 +276,4 @@ Após ter sido escolhido a opção, terá que verificar a classificação indica
             btn.innerHTML = "Não eh divisível por 3";
         }
     }
-</script>
+	</script>
