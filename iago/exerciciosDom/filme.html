@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Inficação filme</title>
+  </head>
+  <body>
+    <h1>Verifique a indicação do filme abaixo:</h1>
+    <div>
+      <input id="genero" type="text" name="genero" placeholder="gênero" />
+      <input id="idade" type="number" name="idade" placeholder="idade" />
+      <button type="submit" onclick="verificar()">Verificar</button>
+    </div>
+    <br />
+    <div>
+      Indicação:
+      <h2 id="indicacao"></h2>
+    </div>
+  </body>
+  <script>
+    function verificar(indicacao) {
+      let genero = document.getElementById("genero").value;
+      let idade = parseInt(document.getElementById("idade").value);
+      alert(idade);
+
+      switch (genero) {
+        case "Ação":
+          if (idade >= 14 && genero == "Ação") {
+            document.getElementById("indicacao").innerHTML = "Bom filme";
+          } else {
+            document.getElementById("indicacao").innerHTML =
+              "Esse filme não é para sua idade";
+          }
+          break;
+
+        default:
+          break;
+      }
+    }
+  </script>
+</html>
