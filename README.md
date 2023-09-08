@@ -277,3 +277,26 @@ Após ter sido escolhido a opção, terá que verificar a classificação indica
         }
     }
 	</script>
+
+ __________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Exercícios dia 08-09-2023
+
+01 - Criar um input, para incluir números a um array, e fazer a ordenação dinamicamente a cada nova inserção de um número. Mostrar na tela os números ordenados (toda vez que adicionar um novo número)
+
+
+02 - Faça um script de uma calculadora IMC, com input de adicionar altura, outro de adicionar o peso, o botão calcular IMC, e mostrar o resultado na tela.
+
+Calcular IMC
+    IMC = peso / (altura * altura)
+    menor que 18,5 - abaixo do peso normal
+    18,5 - 24,9 - peso normal
+    25 - 29,9 - excesso de peso
+    30 - 34,9 - obesidade classe I
+    35 - 39,9 - obesidade classe II
+    maior ou igual a 40 - obesidade classe III
+
+03 - Faça um conversor de temperatura (o usuário pode escolher de Celsius para Fahrenheit, ou vice-versa): deverá ter um input para o valor, input tipo radio para escolher para qual escala de temperatura irá converter, e o botão, além de mostrar o resultado na tela. "A temperatura em graus X é 0000"
+
+04 - Adicione vários números em uma única string, separados com vírgula, em algum evento do JS transforme a string em um array, apresenta o array na tela, e também a soma de todos os valores em suas posições.
+
