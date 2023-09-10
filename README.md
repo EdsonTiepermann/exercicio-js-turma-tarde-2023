@@ -110,6 +110,22 @@ Vai aparecer: 3,2,1
 
 05 - Escreva um script que leia 15 números positivos, encontre o maior deles e o menor deles, e mostre na tela. Faça isso na mão, não invoque nenhum método de sorting. Dica pesquisa sobre bubble sort.
 
+
+	<script>
+	let array = [3,5,7,2,1,1,9,8,6];
+	 console.log("antes ", array);
+
+ 	for (let i = 0; i < array.length; i++ ){
+    	 for  (let j = 0; j < array.length; j++){
+         if (array[j] > array[j + 1]) {
+             [array[j], array[j + 1]] = [array[j + 1], array[j]]
+         }
+     	}
+	}
+ 	console.log("depois ", array);
+
+	</script>
+
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Exercícios dia 10-08-2023 e 15-08-2023
@@ -186,6 +202,44 @@ Desafio array
             29
         ];
 
+
+
+	 let somaBaseAtual = 0;
+	    let somaBaseAnterior = 0;
+	    let merito = 0;
+	    let valorMerito = 800;
+	    let meritoGanho = 0;
+	
+	    for (let index = 0; index < pastasUnidades.length; index++) {
+	        somaBaseAnterior = somaBaseAnterior + baseUnidade[index];
+	        if (pastasUnidades[index] >= 20) {
+	            somaBaseAtual = somaBaseAtual + caixaAtual[index];
+	        }
+	        if (pastasUnidades[index] < 20) {
+	            if (caixaAtual[index] > baseUnidade[index]) {
+	                somaBaseAtual = somaBaseAtual + baseUnidade[index]
+	            }
+	            if (caixaAtual[index] < baseUnidade[index]) {
+	                somaBaseAtual = somaBaseAtual + caixaAtual[index]
+	            }
+	        }
+	    }
+	
+	    console.log(somaBaseAnterior);
+	    console.log(somaBaseAtual);
+	
+	    merito = somaBaseAtual - somaBaseAnterior + baseGerente;
+	    console.log(merito);
+	
+	    if (merito >= minimoMerito) {
+	        meritoGanho = (merito / minimoMerito) * valorMerito;
+	        console.log(meritoGanho);
+	    } else {
+	        console.log('TENTE OUTRA VEZ');
+	    }
+	
+	</script>
+	<!-- 2.270,56 -->
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Exercícios dia 24-08-2023
@@ -221,6 +275,53 @@ ________________________________________________________________________________
 Exercícios dia 01-09-2023
 
 1 - Em uma página HTML, utilizando input, insira uma idade e verifique de forma dinâmica se é menor ou  maior de idade, se a idade for maior ou igual a 18 anos, deixe o background da tela com a cor black e com o texto informando que a idade é maior de idade com a cor silver, se for menor de idade, deixar o background vermelho com as fonts na cor white.
+
+	    <div class="row">
+	        <div class="col-4"></div>
+	        <div class="col-4">
+	            <h3 id="res">Digite uma idade:</h3>
+	        </div>
+	    </div>
+	
+	    <div class="row mt-3 mb-3">
+	        <div class="col-6">
+	            <input type=" text " class="form-control" id="idade" placeholder="Idade">
+	        </div>
+	        <div class="col-6 ">
+	            <button type="button" id="btn-idade" onclick="verIdade();" class="col-12 btn btn-primary">Verificar Idade</button>
+	        </div>
+	    </div>
+	
+	    <div class="row">
+	        <div class="col-4"></div>
+	        <div class="col-4">
+	            <p id="texto" class="fs-1 bg-light">Verifique sua idade:</p>
+	        </div>
+	
+	    </div>
+	    <script>
+	        function verIdade() {
+	            var idade = document.getElementById("idade").value;
+	
+	            var numIdade = parseInt(idade);
+	
+	            const body = document.getElementById("texto");
+	
+	            if (numIdade >= 18) {
+	                body.classList.replace("bg-light", "bg-dark");
+	                body.style.color = "silver";
+	
+	            } else if (numIdade < 18) {
+	                body.classList.replace("bg-light", "bg-danger");
+	                body.style.color = "white";
+	            }
+	
+	
+	        }
+	    </script>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm " crossorigin="anonymous "></script>
+
 
 02- Utilizando eventos DOM e uma página HTML, escreva uma função calculadora que na sua chamada receba uma das operações básicas e dois valores para o cálculo, apresente na tela a operação escolhida e o resultado.
 
@@ -300,3 +401,44 @@ Calcular IMC
 
 04 - Adicione vários números em uma única string, separados com vírgula, em algum evento do JS transforme a string em um array, apresenta o array na tela, e também a soma de todos os valores em suas posições.
 
+	<body>
+	    <!-- Adicione vários números em uma única string, separados com vírgula, em algum evento do JS transforme a string em um array, 
+	    apresente o array na tela, e também a soma de todos os valores em suas posições. -->
+	
+	    <div class="row col-12 mt-4">
+	        <div class="col-2"></div>
+	        <div class="input mb-3 col-4">
+	            <input type="text" id="num" class="form-control" placeholder="Adicione um numero">
+	        </div>
+	        <button type="button" onclick="adicionar()" class="btn btn-outline-secondary col-2">Adicionar</button>
+	    </div>
+	
+	    <div class="row col-12 mt-4">
+	        <div class="col-4"></div>
+	        <div class="input mb-3 col-4">
+	            <input type="text" id="result1" class="form-control mb-3" placeholder="Resultado Array">
+	            <input type="text" id="result2" class="form-control" placeholder="Resultado Soma Array">
+	        </div>
+	    </div>
+	
+	</body>
+	<script>
+	    function adicionar() {
+	        var inputNumber = document.getElementById("num").value;
+	        var inputText1 = document.getElementById("result1");
+	        var inputText2 = document.getElementById("result2");
+	        var array = [];
+	        var total = 0;
+	        array = inputNumber.split(',');
+	
+	        for (let i = 0; i < array.length; i++) {
+	            total += Number(array[i]);
+	        }
+	
+	        inputText1.value = array;
+	        inputText2.value = total;
+	
+	        console.log(array);
+	        console.log(total);
+	    }
+	</script>
