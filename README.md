@@ -401,6 +401,8 @@ Calcular IMC
 
 04 - Adicione vários números em uma única string, separados com vírgula, em algum evento do JS transforme a string em um array, apresenta o array na tela, e também a soma de todos os valores em suas posições.
 
+
+
 	<body>
 	    <!-- Adicione vários números em uma única string, separados com vírgula, em algum evento do JS transforme a string em um array, 
 	    apresente o array na tela, e também a soma de todos os valores em suas posições. -->
