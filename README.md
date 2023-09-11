@@ -390,11 +390,11 @@ Exercícios dia 08-09-2023
 
 Calcular IMC
     IMC = peso / (altura * altura)
-    menor que 18,5 - abaixo do peso normal
-    18,5 - 24,9 - peso normal
-    25 - 29,9 - excesso de peso
-    30 - 34,9 - obesidade classe I
-    35 - 39,9 - obesidade classe II
+    menor que 18.5 - abaixo do peso normal
+    18.5 - 24.9 - peso normal
+    25 - 29.9 - excesso de peso
+    30 - 34.9 - obesidade classe I
+    35 - 39.9 - obesidade classe II
     maior ou igual a 40 - obesidade classe III
 
 03 - Faça um conversor de temperatura (o usuário pode escolher de Celsius para Fahrenheit, ou vice-versa): deverá ter um input para o valor, input tipo radio para escolher para qual escala de temperatura irá converter, e o botão, além de mostrar o resultado na tela. "A temperatura em graus X é 0000"
