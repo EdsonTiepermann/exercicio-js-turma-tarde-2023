@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="nu1">
+    <br>
+    <label for="radio">Celsius:</label>
+    <input type="radio" value="c" name="name" id="t1" checked>
+    <label for="radio">Fahrenheith:</label>
+    <input type="radio" value="f" name="name" id="t2" >
+    <br>
+    <button onclick="calculo()">Calcular</button>
+
+    <h1 id="res">Resultado</h1>
+    <script>
+        function calculo() {
+            var n = parseFloat(document.getElementById('nu1').value);
+            var ce = document.getElementById('t1');
+            var fa = document.getElementById('t2');
+            const resultado =  document.getElementById('res');
+            let result = 0;
+
+            if (ce.checked) {
+                result = (n * 9 / 5) + 32
+                resultado.innerHTML = 'A temperatura em graus é ' + result
+            } else if (fa.checked) {
+                result = (n - 32) * 5 / 9
+                resultado.innerHTML = 'A temperatura em graus é ' + result
+            }
+        }
+    </script>
+
+</body>
+
+</html>
