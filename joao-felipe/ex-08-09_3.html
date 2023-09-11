@@ -68,15 +68,13 @@
     });
 
     function verificarIMC(imc) {
-        if (imc < 17) {
-            createMessage("Muito abaixo do peso", "alert")
-        } else if (imc > 17 && imc <= 18.49) {
-            createMessage("Abaixo do peso", "warning")
-        } else if (imc >= 18.5 && imc <= 24.99) {
+        if (imc < 18.5) {
+            createMessage("abaixo do peso normal", "alert")
+        } else if (imc > 18.5 && imc <= 24.9) {
             createMessage("Peso normal", "sucess")
         } else if (imc >= 25 && imc <= 29.99) {
-            createMessage("Acima do peso", "warning")
-        } else if (imc >= 30 && imc <= 34.99) {
+            createMessage("excesso de peso ", "warning")
+        } else if (imc >= 25 && imc <= 34.99) {
             createMessage("Obesidade I", "alert")
         } else {
             createMessage("Obesidade II", "danger")
@@ -99,6 +97,8 @@
             item.remove();
         }
     }
+
+    docoment.getElementById("imc").addEventListener("click", somar)
 </script>
 
 </html>
