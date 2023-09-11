@@ -293,48 +293,93 @@
 //     }
 
     </script>
-<input type="text"> inserir altura</input>
+<div class="input-group mb-3">
+    <!-- <span class="input-group-text" id="basic-addon1">Inseir um número</span> -->
+    <input type="text" id="numeroaltura" class="form-control" placeholder="Digitar altura">
+    <br> 
+    <input type="text" id="numeropeso" class="form-control" placeholder="Digitar peso">
+</div>
 <br>
-<input type="text"> inserir peso</input>
-<br>
+<button type="button" id="btn-calcular" onclick="calcularImc()" class="btn btn-primary">Verificar</button>
 </body>
+
 <script>
-
 function calcularImc() {
-    let peso = parseInt(document.getElementById("numero").value);
-    let altura = parseInt(document.getElementById("numero").value);
+    let peso = parseInt(document.getElementById("numeropeso").value);
+    let altura = parseFloat(document.getElementById("numeroaltura").value);
     let result = 0;
-    result = peso / (altura *altura);
+    result = peso / (altura * altura);
 
-    let btn = document.getElementById("btn-verificar");
-
-    if (peso / (altura *altura < 18.5)) {
-        // if (result == 0) {
+    let btn = document.getElementById("btn-calcular");
+alert(result)
+    if (result < 18.5) {
         btn.classList.replace("btn-primary", "btn-success");
-        btn.innerHTML = "Abaixo do peso";}
-    else if (peso / (altura *altura <= 24.9)) {
+        btn.innerHTML = "Abaixo do peso";
+    }
+    else if (result >= 18.5 && result < 25) {
         btn.classList.replace("btn-primary", "btn-success");
-        btn.innerHTML = "Peso normal";}
-        else if (peso / (altura *altura <= 29.9)) {
+        btn.innerHTML = "Peso normal";
+    }
+        else if (result >= 25 && result < 30) {
         btn.classList.replace("btn-primary", "btn-success");
-        btn.innerHTML = "Obesidade 1";}
-        else if (peso / (altura *altura <= 34.9)) {
+        btn.innerHTML = "Obesidade 1";
+    }
+        else if (result >= 30 && result < 35) {
         btn.classList.replace("btn-primary", "btn-success");
-        btn.innerHTML = "Obesidade 2";}
-        else if (peso / (altura *altura <= 39.9)) {
+        btn.innerHTML = "Obesidade 2";
+    }
+        else if (result >= 35 && result < 40) {
         btn.classList.replace("btn-primary", "btn-success");
-        btn.innerHTML = "Obesidade 3";}
+        btn.innerHTML = "Obesidade 3";
+    }
         else {
         btn.classList.replace("btn-primary", "btn-success");
-        btn.innerHTML = "Obesidade 4";}
+        btn.innerHTML = "Obesidade 4";
     }
-
-    function insert(num)
-{
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
 }
-
-
+    btn.addEventListener("click", calcularImc);
 </script>
 </html>
+<body>
+    <!-- Adicione vários números em uma única string, separados com vírgula, em algum evento do JS transforme a string em um array, 
+    apresente o array na tela, e também a soma de todos os valores em suas posições. -->
+
+    <div class="row col-12 mt-4">
+        <div class="col-2"></div>
+        <div class="input mb-3 col-4">
+            <input type="text" id="num" class="form-control" placeholder="Adicione um numero">
+        </div>
+        <button type="button" onclick="adicionar()" class="btn btn-outline-secondary col-2">Adicionar</button>
+    </div>
+
+    <div class="row col-12 mt-4">
+        <div class="col-4"></div>
+        <div class="input mb-3 col-4">
+            <input type="text" id="result1" class="form-control mb-3" placeholder="Resultado Array">
+            <input type="text" id="result2" class="form-control" placeholder="Resultado Soma Array">
+        </div>
+    </div>
+    <button onclick="exibir()">Exibir ordem</button>
+</body>
+<script>
+   
+   function exibir(){
+     var num1 = parseFloat(document.getElementById("numero").value);
+     var num2 = parseFloat(document.getElementById("numero").value);
+     var num3= parseFloat(document.getElementById("numero").value);
+
+       var array =([1, 2, 2, 5, 8, 12, 16, 24]);
+        var total = 0;
+        array = parseFloat.split('()');
+
+        for (let i = 0; i < array.length; i()) {
+            Resultado()= Number(array(1));
+        }
+
+        parseFloat.value = array;
+      
+
+        console.log(number); // [1, 2, 2, 5, 8, 12, 16, 24]
+       
+    }
+</script>
