@@ -425,14 +425,15 @@ Calcular IMC
 	
 	</body>
 	<script>
+ 		var array = [];
 	    function adicionar() {
 	        var inputNumber = document.getElementById("num").value;
 	        var inputText1 = document.getElementById("result1");
 	        var inputText2 = document.getElementById("result2");
-	        var array = [];
+	        //var array = [];
 	        var total = 0;
-	        array = inputNumber.split(',');
-	
+	        //array = inputNumber.split(',');
+		array.push(inputNumber);
 	        for (let i = 0; i < array.length; i++) {
 	            total += Number(array[i]);
 	        }
