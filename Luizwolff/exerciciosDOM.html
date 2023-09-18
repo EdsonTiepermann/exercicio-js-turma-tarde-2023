@@ -11,10 +11,10 @@
     <input type="number" placeholder="numero1" id="n1">
     <input type="number" placeholder="numero2" id="n2">
     <h1 id="res"> resultado</h1>
-    <button type="button" onclick="subtrair()" class="btn btn-success">Subtração</button>
-    <button type="button" onclick="dividir()" class="btn btn-warning">dividir</button>
-    <button type="button" onclick="somar()" class="btn btn-primary">somar</button>
-    <button type="button" onclick="multiplicar()" class="btn btn-danger">Danger</button>
+    <button type="button" onclick="subtrair()" id="subtrair" class="btn btn-success">Subtração</button>
+    <button type="button" onclick="dividir()" id="dividir" class="btn btn-warning">dividir</button>
+    <button type="button" onclick="somar()" id="somar" class="btn btn-primary">somar</button>
+    <button type="button" onclick="multiplicar()" id="multiplicar" class="btn btn-danger">multiplicar</button>
 
 
     <script>
@@ -22,27 +22,27 @@
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
             let resultado= Number(n1) +Number(n2)
-            console.log(document.getElementById('soma').innerHTML='Soma')
+            console.log(document.getElementById('somar').innerHTML='soma')
             document.getElementById('res').innerHTML ='o resultado é '  + resultado
         }
         function subtrair() {
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
             let resultado= Number(n1) -Number(n2)
-            console.log(document.getElementById('soma').innerHTML='subtração')
+            console.log(document.getElementById('subtrair').innerHTML='subtração')
             document.getElementById('res').innerHTML ='o resultado é '  + resultado
         }
         function dividir() {
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
-            console.log(document.getElementById('soma').innerHTML='divisão')
+            console.log(document.getElementById('dividir').innerHTML='divisão')
             let resultado= Number(n1) /Number(n2)
             document.getElementById('res').innerHTML ='o resultado é '  + resultado
         }
         function multiplicar() {
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
-            console.log(document.getElementById('soma').innerHTML='multiplicação')
+            console.log(document.getElementById('multiplicar').innerHTML='multiplicação')
             let resultado= Number(n1) *Number(n2)
             document.getElementById('res').innerHTML ='o resultado é '  + resultado
         }
