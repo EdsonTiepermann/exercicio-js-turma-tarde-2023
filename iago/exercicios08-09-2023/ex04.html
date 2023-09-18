@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <title>Exercício 04</title>
+  </head>
+  <body>
+    <!-- 04 - Adicione vários números em uma única string, separados com vírgula, em algum
+     evento do JS transforme a string em um array, apresenta o array na tela, e também
+      a soma de todos os valores em suas posições. -->
+
+    <div class="row col-12 mt-4">
+      <div class="col-2"></div>
+      <div class="input mb-3 col-4">
+        <input
+          type="text"
+          id="num"
+          class="form-control"
+          placeholder="Adicione um numero"
+        />
+      </div>
+      <button
+        type="button"
+        onclick="adicionar()"
+        class="btn btn-outline-secondary col-2"
+      >
+        Adicionar
+      </button>
+    </div>
+
+    <div class="row col-12 mt-4">
+      <div class="col-4"></div>
+      <div class="input mb-3 col-4">
+        <input
+          type="text"
+          id="result1"
+          class="form-control mb-3"
+          placeholder="Resultado Array"
+        />
+        <input
+          type="text"
+          id="result2"
+          class="form-control"
+          placeholder="Resultado Soma Array"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    var array = [];
+    function adicionar() {
+      var inputNumber = document.getElementById("num").value;
+      var inputText1 = document.getElementById("result1");
+      var inputText2 = document.getElementById("result2");
+      // var array = [];
+      var total = 0;
+      // array = inputNumber.split(",");
+      array.push(inputNumber);
+
+      for (let i = 0; i < array.length; i++) {
+        total += Number(array[i]);
+      }
+
+      inputText1.value = array;
+      inputText2.value = total;
+
+      console.log(array);
+      console.log(total);
+    }
+  </script>
+</html>
