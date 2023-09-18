@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+   
+<!-- EX1 -----------------------------------------------------------------
+
+    <input type="number" id="n1">
+    <button onclick="ordenar()">Ordenar</button>
+    <h1 id="res"></h1> -->
+    
+<!-- FIM EX1----------------------------------------------------------------- -->
+
+<!-- EX2 -----------------------------------------------------------------
+
+<form id="formulario">
+    <fieldset>
+
+    	<legend>Calculo IMC</legend>
+    	
+        <label for="kilos">Kilos:</label>
+        <input name="kilos" type="text" />
+    
+        <label for="metros">Metros:</label>
+        <input name="metros" type="text" />
+    
+        <label for="centimetros">Centimetros:</label>
+        <input name="centimetros" type="text" />
+    
+        <label for="imc">IMC:</label>
+        <input name="imc" type="text" disabled="disabled" />
+            
+        <button type="button" class="btn btn-info" onclick="calcular();">Calcular</button>
+
+    </fieldset>
+    </form>
+
+FIM EX2 ----------------------------------------------------------------- -->
+
+EX3 -----------------------------------------------------------------
+
+<div class ex3>
+    <legend>Calculo Temperatura</legend>
+
+    <p>Escolha a medida de temperatura: </p>
+    <label for="celsius">Celsius</label>
+    <input name="celsius" type="radio" />
+
+    <label for="fahrenheit">Fahrenheit</label>
+    <input name="fahrenheit" type="radio"/>
+
+
+</div>
+
+FIM EX3 -----------------------------------------------------------------
+
+
+</body>
+
+<script>
+
+// EX1 -----------------------------------------------------------------
+
+//     let array=[]
+
+//     function ordenar() {
+//         var n =  Number(document.getElementById('n1').value)
+
+//         array.push(n)
+//         array.s0
+//         document.getElementById('res').innerHTML='Resultado: '+ array
+//     }
+
+// FIM EX1 -----------------------------------------------------------------
+
+// EX2 -----------------------------------------------------------------
+
+// function calcular(){
+//     var formulario = document.getElementById("formulario");
+
+//     var kilos = +formulario.kilos.value;
+//     var metros = +formulario.metros.value;
+//     var centimetros = +formulario.centimetros.value;
+
+//     var altura = (metros * 100 + centimetros) / 100;
+
+//     var imc = kilos / (altura * altura);
+
+//     formulario.imc.value = imc.toFixed(2);
+
+//     if(imc < 20){
+//         alert("Você esta abaixo do peso!");
+//     }else if(imc >20 && imc <= 25){
+//         alert("Peso Ideal");
+//     }else if(imc >25 && imc <= 30){
+//         alert("Sobrepeso");
+//     }else if(imc >35 && imc <= 35){
+//         alert("Obesidade Moderada");
+//     }else if(imc >40 && imc <= 50);{
+//         alert("Obesidade Severa");
+//     }else if(imc >40 && imc <= 50){
+//         alert("Obesidade Morbida");
+//     }else{
+//         alert('Gordo');
+//     }
+
+// }
+
+// FIM EX2 -----------------------------------------------------------------
+
+EX3 -----------------------------------------------------------------
+
+
+
+FIM EX3 -----------------------------------------------------------------
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
