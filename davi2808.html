@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Boostrap</title>
+</head>
+
+<body class="m-5">
+    <h1>Aula Bootstrap</h1>
+    <h3>Formulário</h3>
+    <p>1- Crie um formulário em html com o que você aprendeu na aula de HTML, porém utilize o framework Bootstrap para
+        criação do layout, envie as informações para o mesmo arquivo de criação do layout e utilize o method get.
+        Lembrando que o button deve ser do tipo submit.</p>
+
+    <form action="davi2808.html" method="get">
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label">Insira seu e-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Não compartilhamos seus dados</div>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="exampleInputPassword1" class="form-label">Insira uma senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Confira</label>
+        </div>
+        <div class="row mb-4">
+            <button type="submit" class="btn btn-outline-info mb-3">Enviar</button>
+        </div>
+    </form>
+
+    <p>2- Crie um layout com alguns componentes do bootstrap a sua escolha, utilize pelo menos 5 componente do
+        bootstrap.</p>
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Digite aqui</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Qualquer Coisa">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Ou aqui</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Aqui também">
+    </div>
+    
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Teste aqui</button>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const appendAlert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
+    
+      alertPlaceholder.append(wrapper)
+    }
+    
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        appendAlert('Boa Jovem!', 'info')
+      })
+    }</script>
+
+</html>
