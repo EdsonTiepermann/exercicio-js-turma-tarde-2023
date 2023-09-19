@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+             background:-moz-repeating-linear-gradient(red,rgb(1, 5, 37) ,red );
+             padding: 200px;
+             text-align: center;
+
+        }
+        label{
+            color: rgb(255, 0, 0);
+            font-size: 22px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight:900;
+
+        }
+        button{
+            transition: 0.4s;
+            width: 300px;
+            height: 50px;
+            color: white;
+            background-color: rgb(8, 18, 128);
+            border: solid red 10px;
+            box-shadow: 4px 5px 35px 14px rgb(161, 4, 4);
+        }
+        button:hover{
+            transform: translateY(-8px);
+        }
+        input{ 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 900;
+            margin: 20px;
+            padding: 4px;
+            color:rgb(250, 2, 2);
+            background-color: rgb(8, 18, 128);
+            border: solid red 10px;
+            box-shadow: 4px 5px 35px 14px rgb(233, 4, 4);
+
+        }
+    </style>
+</head>
+<body>
+    <label>Insira sua idade:</label>
+    <input type="number" id="idade">
+    <h1 id="res">Você pode assistir?</h1>
+        <br>
+    <label for="">Filme1:Homem aranha</label>
+    <button onclick="filme1()">Escolher</button>
+    <br>
+    <label>Filme2:Batman</label>
+    <button onclick="filme2()">Escolher</button>
+    <br>
+    <label >Filme3: Doce vingança</label>
+    <button onclick="filme3()">Escolher</button>
+    <br>
+    <script>
+        var cor = document.getElementById('res')
+        function filme1() {
+            var n1 = Number(window.document.getElementById('idade').value)
+            if (n1 >= 10) {
+                document.getElementById('res').innerHTML='Pode assistir!'
+                cor.style.background='green'
+            } else if(n1 < 10) {
+                document.getElementById('res').innerHTML='Não pode assistir!'
+                cor.style.background='red'
+
+                
+            }
+            
+        }
+        function filme2() {
+            var n2 = Number(document.getElementById('idade').value);
+            if (n2 >= 14) {
+                document.getElementById('res').innerHTML='Pode assistir!'
+                cor.style.background='green'
+                
+            } else if(n2 < 14){ 
+                document.getElementById('res').innerHTML='Não pode assistir!'
+                cor.style.background='red'
+
+            }
+            
+            
+        }
+        function filme3() {
+            var n3= document.getElementById('idade').value;
+            if (n3 >=18) {
+                document.getElementById('res').innerHTML='Pode assistir!'
+                cor.style.background='black'
+                cor.style.color='white'
+                
+            } else if (n3 < 18){
+                document.getElementById('res').innerHTML='Não pode assistir!'
+                cor.style.background='red'
+                
+
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
