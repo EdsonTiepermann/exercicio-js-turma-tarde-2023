@@ -4,7 +4,7 @@ const cep = document.querySelector('#cep');
 //Pagamos o elemento do input button buscar
 const botao = document.querySelector('#buscar');
 
-//Evento cruado para realizar o envio da requisição
+//Evento criado para realizar o envio da requisição
 //o (e) é a captura do evento 
 botao.addEventListener('click',function(e){
 //cep.addEventListener('blur',function(e)){
@@ -44,5 +44,5 @@ botao.addEventListener('click',function(e){
         console.log('Error: ' + e.message);
     })
     //console.log(search);
-
+    
 })
