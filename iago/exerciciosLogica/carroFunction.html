@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Licar carro - function</title>
+  </head>
+  <body>
+    <h1>Objetos dentro de array, funcrions dentro de array</h1>
+
+    <script>
+      var carro = {
+        tipo: "Fiat",
+        modelo: "Uno",
+        cor: "vermelho",
+        ligando: false,
+
+        ligar: function () {
+          console.log("carro ligado");
+          this.ligando = true;
+        },
+
+        desligar: function () {
+          console.log("carro desligado");
+          this.ligando = false;
+        },
+
+        acelerar: function () {
+          if (this.ligando == true) {
+            console.log("Vrum vrum vrum vrum");
+          } else {
+            console.log("Carro desligado, você precisa liga-lo");
+          }
+        },
+      };
+    </script>
+  </body>
+</html>

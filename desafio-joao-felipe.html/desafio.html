@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <script>
+
+        baseGerente = 0;
+        minimoMerito = 20000;
+
+        let baseUnidade = [
+            132091.35,
+            107262.59,
+            24422.35,
+            28889.29,
+            148347.45,
+            64635.84,
+            30421.26,
+            15000,
+            22585.53
+        ];
+
+        let caixaAtual = [
+            139204.36,
+            99152.61,
+            27806.93,
+            35363.27,
+            173191.01,
+            61822.37,
+            28306.43,
+            46928.11,
+            18644.67
+        ];
+        let pastasUnidades = [
+            87,
+            24,
+            47,
+            20,
+            35,
+            15,
+            42,
+            29,
+            29
+        ];
+
+        let result = 0;
+        let baseGerente = 0;
+        let minimoMerito = 20000;
+        let somaBaseAtual = 0;
+        let merito = 0;
+        let ValorMerito = 800;
+        let meritoGanho = 0;
+
+        for (let i = 0; i < pastasUnidades.length; i++) {
+            somaBaseAnterior = somaBaseAnterior + baseUnidade[i];
+
+            if (pastasUnidades[i] >= 20) {
+                somaBaseAtual = somaBaseAtual + caixaAtual[i]; 
+            }
+            if (pastasUnidades[i] < 20) {
+                if (caixaAtual[i] > baseUnidade[i]) {
+                    somaBaseAtual = somaBaseAtual + baseUnidade[i]
+                }
+
+                if(caixaAtual[i] < baseUnidade[i]) {
+                    somaBaseAtual = somaBaseAtual + caixaAtual[i]
+                }
+            }
+        }
+
+        console.log("Base anterior" , somaBaseAnterior);
+        console.log("Base atual", somaBaseAtual);
+
+        merito = somaBaseAtual - somaBaseAnterior + baseGerente;
+        console.log("merito" , merito);   
+        
+        if (merito >= minimoMerito) {
+            meritoGanho = (merito / minimoMerito) * ValorMerito;
+            console.log("Merito ganha", meritoGanho);
+        } else {
+            console.log('TENTE OUTRA VEZ');
+        }
+    </script>
+</body>
+
+</html>

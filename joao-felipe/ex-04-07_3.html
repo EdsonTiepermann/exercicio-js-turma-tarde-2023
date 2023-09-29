@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="idade" placeholder=" idade">
+
+    <h1 id="res">Digite sua idade</h1>
+
+    <button id="Acao" onclick="acao()">Acao</button>
+    <button id="Romance" onclick="romance()">Romance</button>
+    <button id="Comedia" onclick="comedia()">Comedia</button>
+    <button onclick="(animacao)">Animacao</button>
+    <button onclick="(suspense)">Suspense</button>
+    <button onclick="(terror)">Terror</button>
+
+    <script>
+
+        function acao() {
+            let idade = parseInt(document.getElementById("idade").value);
+            if (idade >= 14) {
+                document.getElementById("res").innerHTML = "Bom filme " + idade;
+            } else if (idade < 14) {
+                document.getElementById("res").innerHTML = " Esse título não é para sua Idade.Romance, comédia,animação " + idade;
+            }
+        }
+
+        function romance() {
+            let idade = parseInt( document.getElementById("idade").value);
+            if (idade >= 10) {
+                document.getElementById("res").innerHTML = " Bom filme " + idade;
+            } else if (idade < 10) {
+                document.getElementById("res").innerHTML = " Esse título não é para sua Idade.Comédia,animação "+ idade;
+            }
+        }
+
+        function comedia()
+
+    </script>
+</body>
+
+</html>

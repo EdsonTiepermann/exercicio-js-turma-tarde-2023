@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let valortotal = 100
+        let valorfinal = 0
+        let formadepagamento = "debito"
+        let numdeparcelas = 1
+        let valorparcelas = 0
+        let valorcartao = 10
+        if (formadepagamento == "pix") {
+            valorfinal = (valortotal * 0.9);
+            console.log('o valor total é ' + valorfinal);
+        } else if (formadepagamento == "debito") {
+            valorfinal = valortotal;
+            if (valorcartao >= valorfinal) {
+                console.log('o valor final é ' + valorfinal);
+            }
+            else {
+                console.log('saldo insuficiente');
+            }
+        }
+        else if (formadepagamento == "credito") {
+            if (numdeparcelas > 1) {
+                valorparcelas = valortotal / numdeparcelas;
+                valorfinal = (valorparcelas + (valorparcelas * 0.1)) * numdeparcelas;
+                if (valorcartao >= valorfinal) {
+                    console.log('o valor final é ' + valorfinal);
+                }
+                else {
+                    console.log('saldo insuficiente');
+                }
+            }
+            else if (numdeparcelas == 1) {
+                valorfinal = (valortotal + valortotal * 0.05);
+                if (valorcartao >= valorfinal) {
+                    console.log('o valor final é ' + valorfinal);
+                }
+                else {
+                    console.log('saldo insuficiente');
+                }
+            }
+        }
+        else if (formadepagamento == "carnê") {
+            valorparcelas = valortotal / numdeparcelas;
+            valorfinal = (valorparcelas + valorparcelas * 0.2) * numdeparcelas;
+            console.log('o valor final é ' + valorfinal)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

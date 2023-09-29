@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="n1" placeholder="numero 1">
+    <input type="number" id="n2" placeholder="numero 2">
+
+    <h1 id="res">vai aparecer o resultado</h1>
+
+    <button onclick="somar()">Somar</button>
+</body>
+
+<script>
+
+
+
+    function somar() {
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        let resultado = parseInt(n1) + parseInt(n2);
+
+        document.getElementById("res").innerHTML = "O resultado eh:" + resultado
+    }
+</script>
+
+</html>

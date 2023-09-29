@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body id="fundo">
+
+<div class="input-group mb-3">
+    <input type="text" id="numero" class="form-control" placeholder="Digitar sua idade">
+</div>
+
+<button type="button" id="btn-verificar" onclick="verificarIdade()" class="btn btn-primary">Salvar</button>
+
+<div id="texto" class="p-3 mb-2 bg-black text-silver">O resultado será aqui</div>
+
+</body>
+
+<script>
+    function verificarIdade() {
+       let num = parseInt(document.getElementById("numero").value);
+        let result = 0;
+        result = num >= 18;
+
+        let btn = document.getElementById("btn-verificar");
+        let body = document.getElementById("fundo");
+
+        if (num >= 18) {
+            btn.classList.replace("btn-primary", "btn-success");
+            body.style.backgroundColor = "black";
+            btn.innerHTML = "eh de maior";
+            document.getElementById("texto").innerHTML = "eh maior de idade";
+        } else {
+            btn.classList.replace("btn-primary", "btn-danger");
+            body.style.backgroundColor = "red";
+            btn.innerHTML = "Não eh de maior";
+            // body.style. = red;
+            document.getElementById("texto").innerHTML = "eh menor de idade";
+            document.getElementById("texto").classList.replace("bg-black", "bg-red")
+        }
+    }
+    </script>
+
+</html>

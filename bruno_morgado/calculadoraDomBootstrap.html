@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="input-group mb-3">
+    <input type="text" id="numero1" class="form-control" placeholder="Digitar o primeiro numero">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" id="numero2" class="form-control" placeholder="Digitar o segundo numero">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" id="op" class="form-control" placeholder="Digitar um numero">
+  </div>
+
+  <button type="button" id="btn-result" onclick="Calculadora()" class="btn btn-primary">Verificar</button>
+
+  <h1 id="result">
+
+  </h1>
+
+</body>
+<script>
+  function Calculadora() {
+    let num1 = parseInt(document.getElementById("numero1").value);
+    let num2 = parseInt(document.getElementById("numero2").value);
+    let op = document.getElementById("op").value;
+    // let btn = document.getElementById("btn-result");
+    let btn = document.getElementById("result");
+
+    switch (op) {
+      case "+":
+        btn.innerHTML = "a soma é : " + (num1 + num2);
+        break;
+      case "-":
+        btn.innerHTML = "a subtraçao é  : " + (num1 - num2);
+        break;
+      case "/":
+        btn.innerHTML = "a divisão é  : " + (num1 / num2);
+        break;
+      case "*":
+        btn.innerHTML = "a multiplicação é  : " + (num1 * num2);
+        break;
+      default:
+        console.log("erro");
+
+    }
+  }
+
+</script>
+
+</html>

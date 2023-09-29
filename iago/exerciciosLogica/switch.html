@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex js</title>
+  </head>
+  <body>
+    <h1>Exercícios Switch</h1>
+    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- 1- Obtenha uma entrada com o nome de um mês e mostre na tela a estação do ano relacionada ao mês. -->
+    <!-- <script>
+      const expr = "Abril";
+      switch (expr) {
+        case "Janeiro":
+          console.log("O mês ’" + expr + " é a estação Verão");
+          break;
+        case "Fevereiro":
+          console.log("O mês " + expr + " é a estação Verão");
+          break;
+
+        case "Março":
+          console.log("O mês " + expr + " é a estação Outono");
+          break;
+
+        case "Abril":
+          console.log("O mês " + expr + " é a estação Outono");
+          break;
+
+        case "Maio":
+          console.log("O mês " + expr + " é a estação Outono");
+          break;
+
+        case "Junho":
+          console.log("O mês " + expr + " é a estação Inverno");
+          break;
+
+        case "Julho":
+          console.log("O mês " + expr + " é a estação Inverno");
+          break;
+
+        case "Agosto":
+          console.log("O mês " + expr + " é a estação Inverno");
+          break;
+
+        case "Setembro":
+          console.log("O mês " + expr + " é a estação Primavera");
+          break;
+
+        case "Outubro":
+          console.log("O mês " + expr + " é a estação Primavera");
+          break;
+
+        case "Novembro":
+          console.log("O mês " + expr + " é a estação Primavera");
+          break;
+
+        case "Dezembro":
+          console.log("O mês " + expr + " é a estação Verão");
+          break;
+
+        default:
+          console.log(`Mês digitado inexistente, o digitado foi` + expr);
+      }
+    </script> -->
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 2- Desenvolva uma calculadora com as 4 operações básicas (soma, subtração, divisão e multiplicação).
+     Receba 2 valores e qual operação a ser realizada, e apresente o cálculo e qual operação na tela -->
+
+    <!-- <script>
+      var num1 = 5;
+      var num2 = 5;
+      var calc = "/";
+
+      switch (calc) {
+        case "+":
+          sum = num1 + num2;
+          console.log(sum);
+          break;
+
+        case "-":
+          sub = num1 - num2;
+          console.log(sub);
+          break;
+
+        case "*":
+          mult = num1 * num2;
+          console.log(mult);
+          break;
+
+        case "/":
+          div = num1 / num2;
+          console.log(div);
+          break;
+      }
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 3- Em uma empresa o salário base é de 2000 reais, se o colaborador tiver o cargo de gerente tem uma
+     acréscimo de 10% no salário, caso o colaborador for supervisor, tem um acréscimo de 50% no salário,
+      e caso for outro cargo o salário é o base. Receba uma entrada com o cargo do colaborador, e apresente
+       na tela o cargo e o salário. -->
+
+    <!-- <script>
+      var income = 2000;
+      var position = "base";
+
+      switch (position) {
+        case "gerente":
+          totalIncome = income + (income * 10) / 100;
+          console.log(totalIncome);
+          break;
+        case "supervisor":
+          totalIncome = income + (income * 50) / 100;
+          console.log(totalIncome);
+          break;
+        case "base":
+          console.log(income);
+          break;
+      }
+    </script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 4- Escreva um script que receba o peso em kg e uma altura em m e a partir desses valores calcule
+     o índice de massa corpórea do utilizador. -->
+
+    <!-- <script>
+      var peso = 25;
+      var altura = 1.75;
+
+      imc = peso / (altura * altura);
+
+      console.log("IMC = " + imc);
+
+      if (imc < 18.5) {
+        console.log("Abaixo do peso");
+      } else if (imc >= 18.5 && imc <= 24.9) {
+        console.log("Peso normal");
+      } else if (imc >= 25 && imc <= 29.9) {
+        console.log("Sobrepeso");
+      } else {
+        console.log("Obesidade");
+      }
+    </script> -->
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!-- 5- Compras, crie um script com a seguinte situação. Uma variável com valor total da compra. tipos de
+     pagamentos (pix, débito, crédito, parcelado no cartão, parcelado no carnê). se for pix, aplica-se um
+      desconto de 10%; se for no débito, valor original; se for crédito em 1x, acréscimo de 5%; se for parcelado
+       no cartão, acréscimo de 10% por parcela; se for parcelado no carnê, acréscimo de 20% por parcela; -->
+
+    <!-- <script>
+      var compra = 100;
+
+      var tipoasPagamento =
+        "pix, debito, credito, parceladocartao, parceladoboleto";
+
+      var pagamento = "ameixa";
+
+      switch (pagamento) {
+        case "pix":
+          totalPagamento = compra - (compra * 10) / 100;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "debito":
+          totalPagamento = compra;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "credito":
+          totalPagamento = compra + (compra * 5) / 100;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "parceladocartao":
+          totalPagamento = compra + (compra * 10) / 100;
+          console.log("O total da compra é: " + totalPagamento);
+          break;
+        case "parceladoboleto":
+          totalPagamento = compra + (compra * 20) / 100;
+          console.log("O total da compra é:" + totalPagamento);
+          break;
+        default:
+          console.log(
+            `Tipo de pagamento digitado é inválido. Digite uma das opções a seguir: ` +
+              tipoasPagamento
+          );
+      }
+    </script> -->
+  </body>
+</html>

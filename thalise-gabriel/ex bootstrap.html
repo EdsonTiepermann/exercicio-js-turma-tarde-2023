@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* function somar(){
+let n1 = document= getElementById("n1").values;
+let n2 = document= getElementById("n2").values;
+let resultado = parseInt(n1) + parseInt(n2);
+*/
+
+function verificarDivisivel() {
+    // alert("oi");
+   let num = parseInt(document.getElementById("numero").value);
+    let result = 0;
+    result = num % 3;
+    // console.log(num);
+
+    let btn = document.getElementById("btn-verificar");
+
+    if (num % 3 == 0) {
+        // if (result == 0) {
+        btn.classList.replace("btn-primary", "btn-success");
+        btn.innerHTML = "É divisível por 3";
+    } else {
+        btn.classList.replace("btn-primary", "btn-danger");
+        btn.innerHTML = "Não eh divisível por 3";
+    }
+}
+function insert(num)
+{
+    var numero = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = numero + num;
+}
+function clean()
+{
+    document.getElementById('resultado').innerHTML = "";
+}
+function back()
+{
+    var resultado = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+}
+function calcular()
+{
+    var resultado = document.getElementById('resultado').innerHTML;
+    if(resultado)
+    {
+        document.getElementById('resultado').innerHTML = eval(resultado);
+    }
+    else
+    {
+        document.getElementById('resultado').innerHTML = "Nada..."
+    }
+}    
+    </script>
+
+<div class="input-group mb-3">
+    <!-- <span class="input-group-text" id="basic-addon1">Inseir um número</span> -->
+    <input type="text" id="numero" class="form-control" placeholder="Digitar um número">
+</div>
+
+<button type="button" id="btn-verificar" onclick="verificarDivisivel()" class="btn btn-primary">Verificar</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>

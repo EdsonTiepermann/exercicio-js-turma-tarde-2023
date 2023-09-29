@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numeros = [12, 32, 3, 43, 66, 3];
+        let par = 0
+        let somapares = 0
+        let medpares = 0
+        let impar = 0
+        let somaimpar = 0
+        let medgeral = 0
+       
+
+        for (let i = 0; i < numeros.length; i++) {
+            let numero = numeros[i]
+            if (numero % 2 == 0) {
+                par += 1
+                somapares += numero
+            }
+            else {
+                impar += 1
+                somaimpar += numero
+            }
+        }
+        medpares = somapares / par;
+        medgeral = (somaimpar + somapares) / numeros.length
+
+        console.log('dentre os numeros '+ par +' sao pares e '+ impar +' sao impares, a media de numeros pares é '+ medpares +' e a media geral é '+medgeral)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
