@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="radio" name="converter" id="CtoF" />Celsius para Fahrenheit <br />
+    <input type="radio" name="converter" id="FtoC" />Fahrenheit para Celsius <br />
+    Converter valor :<input id="num" type="number"> <br />
+    <button onclick="main()">Calcular</button><br />
+    A temperatura em graus é: <div id="resposta" id="res" style='display:inline'></div><br />
+
+</body>
+
+<script>
+    function main() {
+        var num = parseInt(document.getElementById("num").value);
+        var resp = document.getElementById("resposta");
+
+        if ( document.getElementById("CtoF").checked == true)
+            resp.innerHTML = ctof(num);
+        if (document.getElementById("FtoC").checked == true)
+            resp.innerHTML = ftoc(num);
+    }
+    function ctof(x) {
+        return (1.8 * x + 32);
+    }
+
+    function ftoc(x) {
+
+        return ((x - 32) * 5 / 9);
+    }
+
+
+</script>
+
+</html>

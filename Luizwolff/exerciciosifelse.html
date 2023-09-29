@@ -1,0 +1,250 @@
+'<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+            padding: 10px;
+            margin: 20px;
+            border: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    /*
+        1- Faça um script que verifique se um número inteiro é divisível por 3.
+         Mostrar no console a mensagem se é divisível ou não.
+
+    */
+    /* var num = 3;
+
+     if (num % 3==0) {
+        console.log('Este número é divisivel', num)
+        
+     } else {
+        console.log('este número não é divisivel por 3')
+        
+     }
+
+        */
+        
+        /*
+    2- Faça um script que receba a hora e retorne no console a 
+     mensagem entre 00h e 12h "Bom dia!", entre 12h e 18h "Boa tarde!",
+    e entre 18h e 00h "Boa noite!".*/
+
+   /* var hora =3 ;
+
+    if (hora <= 12) {
+        console.log('Bom dia!')
+
+    }
+    else if (hora >= 12 && hora <=18){
+         console.log('Boa tarde!')
+
+    } else if(18 <= hora){
+        console.log('Boa noite!')
+        
+    }
+        */
+        /*
+    3- Faça um script capaz de encontrar o menor dentre 3 
+    números inteiros quaisquer dados pelo teclado e retorne a 
+    resposta no console.
+        */
+       /*
+    var num1 = 10;
+    var num2 = 11;
+    var num3 = 6;
+
+   var result = num1;
+
+   if (num2 < result ) {
+    result = num2;
+    console.log('O menor valor dentre eles é', result)
+    
+   }
+   else if (num3 < result ){
+    result = num3;
+    console.log('O menor valor dentre eles é', result)
+   }
+
+    else {
+        console.log('O menor valor dentre eles é', result)
+    
+   }
+    */
+    /*
+    4- Faça um script que verifique se uma letra armazenada numa
+     variável é vogal ou consoante e 
+     retorne a resposta no console.
+    */
+   /*
+   var letra = 'b';
+   switch (letra) {
+    case 'a':
+        console.log('É uma vogal ',letra);
+    break;
+    case 'e':
+        console.log('É uma vogal',letra);
+    break;
+    case 'i':
+        console.log('É uma vogal',letra);
+    break;
+    case 'o':
+        console.log('É uma vogal',letra);
+    break;
+    case 'u':
+        console.log('É uma vogal',letra);
+    break;
+   
+    default:
+        console.log('É uma consoante',letra);
+        break;
+   }
+    */
+   /*
+   5- Faça um script que pede duas notas de um aluno. Em seguida ele
+    deve calcular a média do aluno e dar o seguinte resultado: A mensagem "Aprovado", se
+    a média alcançada for maior ou igual a sete; A mensagem "Reprovado", se a média for menor do que sete; A mensagem 
+   "Aprovado com Distinção", se a média for igual a dez.
+   */
+    /* var nota1 = 90;
+  var nota2 = 60;
+
+  var result = nota1 + nota2 / 2
+
+  if (result >= 70 && result <= 100) {
+    console.log('aprovado',result)
+} 
+  else if(result < 70 ) {
+    console.log('Reprovado',result)
+  }  
+  else if(result >= 100) {
+    console.log('Aprovado com distinção',result)
+  }
+    else {
+    
+  }
+  */
+ /*
+ 6- Fazer um script que receba o valor do salário mínimo e o valor do salário de uma pessoa. Calcular e imprimir quantos salários mínimos ela ganha. 
+ Se a pessoa ganhar menos de 1 salário mínimo, retornar na tela "baixa renda". Se a pessoa ganhar entre 1 salário mínimo e 5 salários mínimos, retornar na tela "
+  classe média". Se a pessoa ganhar mais de 5 salários mínimos
+ , retornar na tela "classe alta". Base salário mínimo 1212. Salário da pessoa irá ser dada pela variável.
+ */
+/*var salário = 700000000000;
+var saláriomin = 1212;
+
+if (salário <= saláriomin) {
+    console.log('Baixa renda ',salário )
+}
+else if (salário >= saláriomin && salário <= saláriomin*5){
+    console.log('classe média',salário)
+
+}
+else if (salário *5 >= saláriomin){
+    console.log('Classe alta', salário)
+}
+else {
+    
+}
+*/
+/*
+    7- Em uma loja e CDs existem apenas quatro tipos de
+    preços que estão associados a cores. Assim os CDs que ficam na loja não são marcados por preços e sim por cores. Desenvolva o script que a partir da entrada da cor, mostre o preço no console. A loja está atualmente com a seguinte tabela de preços:
+    Preços verde = 10; amarelo = 20; vermelho = 30; azul = 40;
+ */
+
+
+ /*var cor = 'vermelho'
+ switch (cor) {
+    case 'verde':
+        console.log( 10);
+    break;
+    case 'vermelho':
+        console.log( 30);
+    break;
+    case 'amarelo':
+        console.log( 20);
+    break;
+    case 'azul':
+        console.log( 40);
+    break;
+ 
+    default:
+        break;
+ }
+ */
+ /*
+      8- Faça um script que uma variável receba um número (de 1 a 12) e retorne o mês correspondente como uma string no console. Por exemplo, se a entrada for 2, deverá retornar “fevereiro”, pois este é o 2° mês.
+ */
+    let mês = 3; 
+    /*
+        if (mês === 1) {
+            console.log('"Janeiro"')
+        }     
+        else if(mês == 2){
+            console.log('"Fevereiro"')
+         }
+        else if(mês == 3){
+            console.log('"Março"')
+            }
+        else if(mês == 4){
+             console.log('"Abril"')
+        }  
+        else if(mês == 5){
+            console.log('"Maio"')
+        } 
+        else if(mês == 6){
+            console.log('"Junho"')
+        } 
+        else if(mês == 7){
+            console.log('"Julho"')
+        }     
+        else if(mês == 8){
+            console.log('"Agosto"')
+        }     
+        else if(mês == 9){
+            console.log('"Setembro"')
+        }     
+        else if(mês == 10){
+            console.log('"Outubro"')
+        }  
+        else if(mês == 11){
+            console.log('"Novembro"')
+        }
+        else if(mês == 12){
+            console.log('"Dezembro"')
+        } 
+        */                               
+
+
+// else {
+    
+// }
+
+//  var mês = 1;
+// switch (mês) {
+//     case 1
+    
+//     :
+//         console.log(mês == "janeiro")
+        
+//         break;
+
+//     default:
+//         break;
+// }
+
+
+
+
+    </script>
+    
+</body>
+</html>

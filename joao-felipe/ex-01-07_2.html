@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <input type="number" id="idade" placeholder=" idade">
+
+    <h1 id="res">Digite sua idade</h1>
+
+    <button onclick="digitar()">Conferir</button>
+</body>
+
+<script>
+
+    function digitar() {
+        let idade = document.getElementById("idade").value
+        let resultado = parseInt(idade)
+
+        if (resultado >= 18) {
+            document.getElementById("res").innerHTML = "Maior de idade" + resultado
+            document.getElementById("body").style.backgroundColor = "black"
+            document.getElementById("res").style.color = "silver"
+
+
+        } else if(resultado < 18) {
+            document.getElementById("res").innerHTML = "Menor de idade" + resultado
+            document.getElementById("body").style.backgroundColor = "red"
+            document.getElementById("res").style.color = "white"
+
+
+
+        }
+      
+       
+    }
+</script>
+</html>

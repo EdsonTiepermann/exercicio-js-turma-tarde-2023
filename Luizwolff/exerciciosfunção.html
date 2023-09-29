@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        /*
+        01- Escreva uma função que realize uma soma e mostre o resultado no console.log. //resolução mais simples e chamada da função do exercício 1. function somarDoisNumeros(num1, num2){ return num1 + num2 }
+        */
+        /*
+        function somar(num1,num2) {
+            let result
+            result = num1 / num2
+            return result;
+            
+        } 
+        let nu1 = 8
+         let nu2 = 8
+        console.log(somar (nu1,nu2) )
+        */
+       /*
+        02- Escreva uma função calculadora que na sua chamada receba uma das operações básicas e dois valores para o cálculo, apresente no console.log a operação escolhida e o resultado.
+        */
+       /*
+        function calcular(op, num1, num2) {
+         
+            let result
+            switch (op) {
+                case 'somar':
+                    return num1 + num2
+                    break;
+                case 'sub':
+                    return num1 - num2
+                    break;
+                case 'dividir':
+                    return num1 / num2
+                    break;
+                case 'multiplicar':
+                    return num1 * num2
+                    break;
+                default:
+                    break;
+            }
+
+
+        }
+        let nu1 = 3;
+        let nu2 = 3;
+        console.log(calcular('dividir',nu1, nu2))
+        */
+       /*
+       03-
+       */
+      function filme(genero,usuario) {
+        let result
+        switch (genero) {
+            case 'Ação':
+                if (usuario >= 14) {
+                    return 'Bom filme'
+                    
+                }
+                else if (usuario < 14 )
+                return "Esse titulo não é para sua idade"
+            
+                break;
+        
+                
+            default:
+                break;
+        }
+
+        
+      }
+      let genero='Ação'
+      let usuario =14
+      console.log(filme(genero, usuario))
+
+
+    </script>
+
+</body>
+
+</html>

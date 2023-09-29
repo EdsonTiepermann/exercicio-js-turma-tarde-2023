@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <input type="number" id="n1">
+    <h1 id="res">vai aparecer o resultado</h1>
+      <button onclick="idade()">ver idade</button>
+      <script>
+        function idade() {
+            let n1 = document.getElementById('n1').value
+            let n2 = document.getElementById('res')
+            if (n1 >= 18) {  
+              n2.style.color='silver'
+              n2.style.background ='black'
+              document.getElementById('res').innerHTML='Você é maior de idade'
+              
+            }
+            if (n1 < 18) {
+              document.getElementById('res').innerHTML='Você é menor de idade'
+              n2.style.background ='red'
+              n2.style.color='white'
+              
+            }
+        }
+            
+      </script> -->
+
+  <!-- 02-Escreva uma função calculadora que na 
+      sua chamada receba uma das ope
+      rações básicas e dois valores para o cálculo, apresente no console.log a operação escolhida e o resultado. -->
+
+  <input type="number" placeholder="numero1" id="nu1">
+  <input type="number" placeholder="numero2" id="nu2">
+  <h1 id="res"> resultado</h1>
+  <button onclick="calcular()">Calcular</button>
+</body>
+<script>
+  function calcular() {
+    let n1 = document.getElementById('nu1').value;
+    let n2 = document.getElementById('nu2').value;
+    let resultado = Number(n1) + Number(n2);
+    document.getElementById('res').innerHTML = 'O resultado é ' + resultado;
+  }
+</script>
+
+</html>
